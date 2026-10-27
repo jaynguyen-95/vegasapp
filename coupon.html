@@ -1,0 +1,1173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Vegas Elite Coupon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap">
+<style>
+/* Same system as Vegas Jackpot Arc: warm espresso header, cream body,
+   one glass recipe (dark on the header, light on cream), the brand diamond in gold, red only for the diamond. */
+:root{
+  --font:'Montserrat',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --bg:#efede7; --bg2:#faf8f4; --surface:#ffffff;
+  --cream:#f0e9d8; --cream-2:#f7f0d5;
+  --taupe:#9c8570; --espresso:#624f3d;
+  --text:#4d3d2e; --text-2:#76634f; --line:#e6dfcf;
+  --gold:#f1ca6d; --gold-hi:#f8dd93; --gold-lo:#dcae48; --num-a:#d6ad4f; --num-b:#a8791f;
+  --red:#ed1c24;
+  --hero-a:#7d6753; --hero-b:#5e4b3a; --hero-c:#4b3b2d;
+  --on-hero:#ffffff; --on-hero-2:rgba(255,255,255,.84);
+  --ease:cubic-bezier(.32,.72,0,1);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:var(--font);font-weight:400;color:var(--text);line-height:1.45;-webkit-font-smoothing:antialiased;
+  background:linear-gradient(180deg,var(--bg) 0,var(--bg2) 60%);background-color:var(--bg);min-height:100dvh}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none;padding:0;-webkit-tap-highlight-color:transparent;transition:transform .16s ease,background-color .2s ease,opacity .2s ease}
+button:active:not(:disabled){transform:scale(.96)}
+button:disabled{cursor:default}
+button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+h1,h2,h3,p{margin:0}
+ol,ul{list-style:none;margin:0;padding:0}
+.wrap{max-width:430px;margin:0 auto;padding-inline:16px}
+.sprite{position:absolute;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none}
+.dm{height:var(--h,16px);width:calc(var(--h,16px) * .5237);flex:none;fill:var(--red);display:block}
+.dm.gold{fill:url(#gg)}
+.ic{width:15px;height:15px;display:block;flex:none}
+
+/* glass: one recipe, two grounds */
+.gd{background:linear-gradient(180deg,rgba(255,255,255,.24),rgba(255,255,255,.10));-webkit-backdrop-filter:blur(16px) saturate(1.5);backdrop-filter:blur(16px) saturate(1.5);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.45),inset 0 0 0 1px rgba(255,255,255,.14),0 6px 16px -8px rgba(20,10,0,.35)}
+.gl{background:linear-gradient(180deg,rgba(255,255,255,.92),rgba(255,255,255,.62));-webkit-backdrop-filter:blur(16px) saturate(1.4);backdrop-filter:blur(16px) saturate(1.4);
+  box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px rgba(98,79,61,.08),0 8px 20px -12px rgba(98,79,61,.35)}
+.thumb{background:linear-gradient(180deg,#ffffff,#f7f2e9);color:var(--text);box-shadow:inset 0 1px 0 #fff,0 2px 10px rgba(40,25,10,.2)}
+
+/* ===== header ===== */
+.hero{position:relative;isolation:isolate;overflow:hidden;color:var(--on-hero);border-radius:0 0 36px 36px;
+  background:radial-gradient(80% 55% at 12% 0%,rgba(241,202,109,.24),transparent 62%),linear-gradient(170deg,var(--hero-a),var(--hero-b) 58%,var(--hero-c));
+  box-shadow:0 22px 44px -26px rgba(60,40,20,.65)}
+.hero .wrap{padding-top:18px;padding-bottom:22px}
+.orb{position:absolute;z-index:-1;border-radius:50%;filter:blur(30px);pointer-events:none;animation:drift 14s ease-in-out infinite}
+.o1{width:170px;height:170px;left:-50px;bottom:10px;background:rgba(233,190,93,.42)}
+.o2{width:160px;height:160px;right:-50px;bottom:50px;background:rgba(214,190,150,.30);animation-delay:-7s}
+@keyframes drift{50%{transform:translate(18px,-14px) scale(1.08)}}
+.greet{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.greet p{font-size:.8125rem;color:var(--on-hero-2);line-height:1.4}
+.greet p b{color:var(--on-hero);font-weight:700}
+.greet p small{display:block;font-size:.6875rem;color:var(--on-hero-2)}
+.circ{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;flex:none;color:var(--on-hero)}
+.circ .ic{width:17px;height:17px}
+.ttl{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:6px;line-height:1}
+.ttl span{font-size:clamp(2.375rem,12.4vw,3.125rem);letter-spacing:-.03em}
+.ttl .l{font-weight:300}
+.ttl .r{font-weight:700}
+.seg{position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:2px;padding:4px;border-radius:999px;margin-top:18px}
+.seg .knob{position:absolute;top:4px;bottom:4px;left:4px;width:calc((100% - 10px) / 2);border-radius:999px;transition:transform .45s var(--ease)}
+.seg button{position:relative;padding:8px 0;border-radius:999px;font-size:.8125rem;font-weight:600;color:var(--on-hero);transition:color .3s}
+.seg button[aria-selected="true"]{color:var(--text)}
+.seg .bdg{display:inline-grid;place-items:center;min-width:17px;height:17px;padding:0 5px;margin-left:6px;border-radius:999px;font-size:.625rem;font-weight:700;color:var(--text);
+  background:linear-gradient(180deg,var(--gold-hi),var(--gold-lo));vertical-align:1px}
+
+/* progress card in the header */
+.pc{margin-top:16px;padding:16px 18px;border-radius:24px;
+  background:linear-gradient(180deg,rgba(28,19,11,.40),rgba(28,19,11,.28));-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.14),inset 0 0 0 1px rgba(255,255,255,.07),0 10px 24px -14px rgba(20,10,0,.6)}
+.pc .hd{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.pc .hd b{font-size:2.5rem;font-weight:700;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums;
+  background:linear-gradient(180deg,#fbe8b4,#ebc160);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.pc .hd span{font-size:.9375rem;font-weight:600;color:var(--on-hero-2)}
+.pc .bar{height:8px;border-radius:999px;background:rgba(255,255,255,.12);overflow:hidden;margin-top:14px}
+.pc .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chip{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 12px;border-radius:999px;font-size:.75rem;color:var(--on-hero-2);
+  background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.07)}
+.chip b{color:var(--on-hero);font-weight:700;font-variant-numeric:tabular-nums}
+.chip .ic{width:14px;height:14px;color:var(--gold-hi)}
+.pc .mt{margin-top:10px;font-size:.75rem;color:var(--on-hero-2)}
+.pc .mt b{color:var(--on-hero)}
+
+/* ===== body on cream ===== */
+.bd{display:flex;flex-direction:column;gap:28px;padding-top:24px;padding-bottom:170px}
+.lh{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;padding-bottom:8px}
+.lh h2{font-size:1.1875rem;font-weight:700;letter-spacing:-.015em;color:var(--text);line-height:1.2}
+.lh .s{font-size:.75rem;color:var(--text-2);text-align:right;font-variant-numeric:tabular-nums}
+.lh .s b.rdy{color:var(--num-b)}
+.klbl{font-size:.6875rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--text-2);margin-bottom:10px}
+.fade{animation:fadeup .45s var(--ease) both}
+@keyframes fadeup{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.dl{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+.dl .k{font-size:.625rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text-2);padding-top:3px}
+.dl p{font-size:.875rem;color:var(--text);font-weight:600}
+.stt{display:flex;align-items:center;gap:7px;font-size:.8125rem;font-weight:700;color:var(--text)}
+.pill{height:42px;padding:0 20px;border-radius:999px;font-size:.8125rem;font-weight:700;color:var(--num-b);display:inline-flex;align-items:center;gap:8px}
+.pill.dk{color:#fff;background:linear-gradient(170deg,var(--hero-a),var(--hero-b) 58%,var(--hero-c));box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 10px 22px -12px rgba(60,40,20,.7)}
+.pill:disabled{opacity:.5}
+.hint{font-size:.75rem;color:var(--text-2)}
+
+.track{height:10px;border-radius:999px;background:var(--cream);overflow:hidden}
+.fill{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--gold-hi),var(--gold-lo));animation:grow .9s var(--ease) both}
+@keyframes grow{from{width:0}}
+.note{font-size:.6875rem;color:var(--text-2);text-align:center}
+
+/* current mission card */
+.mc{position:relative;overflow:hidden;isolation:isolate;padding:18px 18px 16px;border-radius:26px;color:#fff;
+  background:radial-gradient(80% 60% at 8% 0%,rgba(241,202,109,.20),transparent 60%),linear-gradient(170deg,#5e4b3a,#3f3226 60%,#30261c);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.16),inset 0 0 0 1px rgba(241,202,109,.14),0 22px 40px -24px rgba(40,25,10,.8)}
+.mc .deco{position:absolute;right:-34px;top:-40px;z-index:-1;opacity:.07;fill:#fff}
+.mc .top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.mc .top em{font-style:normal;font-size:.6875rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+.tag{display:inline-flex;align-items:center;height:24px;padding:0 10px;border-radius:8px;font-size:.625rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold-hi);background:rgba(241,202,109,.14);box-shadow:inset 0 0 0 1px rgba(241,202,109,.2)}
+.mc .r2{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-top:8px}
+.mc h3{font-size:1.625rem;font-weight:700;letter-spacing:-.02em;line-height:1.1}
+.mc .val{font-size:1.375rem;font-weight:700;color:var(--gold-hi);font-variant-numeric:tabular-nums}
+.mc .val.vi .ic{width:26px;height:26px;color:var(--gold-hi)}
+.mc .g{margin-top:12px;font-size:.9375rem;color:rgba(255,255,255,.86)}
+.mc .g b{color:#fff}
+.mc .track{height:8px;margin-top:14px;background:rgba(255,255,255,.12)}
+.mc .nums{display:flex;justify-content:space-between;margin-top:8px;font-size:.75rem;color:rgba(255,255,255,.65);font-variant-numeric:tabular-nums}
+.mc .nums b{color:#fff}
+.mc .sub{margin-top:8px;font-size:.75rem;color:rgba(255,255,255,.65)}
+.mc .sub b{color:var(--gold-hi)}
+.vd{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:46px;margin-top:16px;border-radius:999px;font-size:.8125rem;font-weight:700;color:#fff;
+  box-shadow:inset 0 0 0 1px rgba(241,202,109,.5)}
+.vd:hover{background:rgba(241,202,109,.08)}
+.mc.fin .trophy{width:54px;height:54px;margin-bottom:6px}
+
+/* reward rows */
+.wr{display:grid;grid-template-columns:40px minmax(0,1fr) auto 12px;gap:12px;align-items:center;padding:10px 12px;margin-inline:-12px;width:calc(100% + 24px);border-radius:18px;text-align:left}
+.wr:hover{background:rgba(255,255,255,.55)}
+.wr .d em{display:block;font-style:normal;font-size:.5625rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-2)}
+.wr .d b{display:block;font-size:1.0625rem;font-weight:700;line-height:1.15;font-variant-numeric:tabular-nums;color:var(--num-b)}
+.wr .m b{display:block;font-size:.875rem;font-weight:700;color:var(--text)}
+.wr .m em{display:block;font-size:.6875rem;font-style:normal;color:var(--text-2);line-height:1.35}
+.wr .t{display:flex;flex-direction:column;align-items:flex-end;gap:2px;text-align:right}
+.wr .t .tv{font-size:.875rem;font-weight:700;color:var(--text);font-variant-numeric:tabular-nums;white-space:nowrap}
+.wr .t .ts{display:flex;align-items:center;gap:4px;font-size:.625rem;font-weight:600;color:var(--text-2);white-space:nowrap}
+.wr .t .ts.ok{color:var(--num-b)}
+.wr .t .ic{width:11px;height:11px}
+.wr>svg{width:12px;height:12px;color:var(--taupe)}
+.wr.lock{opacity:.6}
+.wrl li+li{border-top:1px solid var(--line)}
+.pi{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--bg);color:var(--fg);box-shadow:inset 0 1px 0 rgba(255,255,255,.4),0 6px 12px -6px rgba(40,25,10,.45)}
+.pi .ic{width:18px;height:18px}
+.pi.big{width:52px;height:52px;border-radius:16px;flex:none}
+.pi.big .ic{width:26px;height:26px}
+
+/* ===== check-in bar ===== */
+.ctaw{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:22px 16px calc(14px + env(safe-area-inset-bottom,0px));
+  background:linear-gradient(180deg,rgba(250,248,244,0),rgba(250,248,244,.94) 42%)}
+.vst{display:flex;align-items:center;justify-content:center;gap:6px;max-width:398px;margin:0 auto 8px;font-size:.6875rem;font-weight:600;color:var(--text-2)}
+.vst i{width:7px;height:7px;border-radius:50%;background:#3fae6a;box-shadow:0 0 0 3px rgba(63,174,106,.18)}
+.ctab{display:flex;gap:8px;max-width:398px;margin:0 auto}
+.cta{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:12px;width:100%;max-width:398px;margin:0 auto;height:56px;border-radius:999px;
+  color:#fff;font-size:.875rem;font-weight:700;letter-spacing:.06em;
+  background:radial-gradient(60% 120% at 15% 0%,rgba(241,202,109,.28),transparent 60%),linear-gradient(170deg,var(--hero-a),var(--hero-b) 58%,var(--hero-c));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.28),0 16px 30px -14px rgba(60,40,20,.75)}
+.cta>*{position:relative}
+.cta small{font-size:.5625rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-hi);opacity:.85}
+.ctab .cta{flex:1;min-width:0}
+.cto{flex:none;height:56px;padding:0 20px;border-radius:999px;font-size:.8125rem;font-weight:700;color:var(--text)}
+.cta .fl{position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,rgba(248,221,147,.15),rgba(248,221,147,.5))}
+.cta.scan .fl{animation:scan 1.1s linear forwards}
+@keyframes scan{to{width:100%}}
+.cta.scan .dm{animation:spin .6s linear infinite}
+@keyframes spin{to{transform:rotateY(360deg)}}
+.cta::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.22) 50%,transparent 65%);background-size:260% 100%;animation:sheen 4s linear infinite}
+@keyframes sheen{from{background-position:200% 0}to{background-position:-100% 0}}
+
+/* ===== overlays ===== */
+.ov{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:16px;background:rgba(60,45,30,.36);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);opacity:0;pointer-events:none;transition:opacity .35s;overflow:hidden}
+.ov.open{opacity:1;pointer-events:auto}
+.cc{position:relative;width:min(340px,100%);border-radius:32px;overflow:hidden;background:var(--bg2);box-shadow:0 30px 60px -20px rgba(40,25,10,.6);transform:translateY(26px) scale(.95);transition:transform .6s var(--ease)}
+.ov.open .cc{transform:none}
+.cc .top{position:relative;isolation:isolate;overflow:hidden;height:176px;display:grid;place-items:center;border-radius:0 0 30px 30px;
+  background:radial-gradient(80% 60% at 20% 0%,rgba(241,202,109,.3),transparent 62%),linear-gradient(170deg,var(--hero-a),var(--hero-b) 58%,var(--hero-c))}
+.cc .gem{display:block;animation:gemspin 1.2s var(--ease) both;filter:drop-shadow(0 12px 18px rgba(30,15,0,.45))}
+@keyframes gemspin{0%{transform:rotateY(540deg) scale(.2);opacity:0}100%{transform:none;opacity:1}}
+.cc .top::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.18) 50%,transparent 60%);background-size:260% 100%;animation:sheen 3s 1s linear infinite}
+.cc .b2{padding:20px 22px 22px}
+.cc .row{display:flex;align-items:center;gap:14px}
+.gn{font-size:2.25rem;font-weight:700;letter-spacing:-.03em;line-height:1;background:linear-gradient(180deg,var(--num-a),var(--num-b));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-variant-numeric:tabular-nums}
+.cc h3{font-size:1.1875rem;font-weight:700;letter-spacing:-.015em;line-height:1.2}
+.cc h3 small{display:block;font-size:.625rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--text-2);margin-bottom:2px}
+.cc h3.big{font-size:1.5rem;text-align:center}
+.cc p{font-size:.875rem;color:var(--text-2);margin:12px 0 16px}
+.cc p.ctr{text-align:center}
+.cc .pill{width:100%;justify-content:center;height:48px}
+.cc .pill+.pill{margin-top:8px}
+.offer{display:flex;align-items:center;gap:12px;margin-top:16px;padding:12px 14px;border-radius:18px;background:#fff;box-shadow:inset 0 0 0 1px rgba(98,79,61,.06),0 8px 18px -12px rgba(98,79,61,.4)}
+.offer .ic{width:20px;height:20px;color:var(--num-b)}
+.otag{display:inline-block;height:20px;line-height:20px;padding:0 8px;border-radius:999px;background:var(--cream);font-size:.5625rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-2)}
+.offer b{display:block;font-size:.875rem;font-weight:700;color:var(--text);margin-top:3px}
+.cc .claimh{margin:12px 0 14px;font-size:.8125rem;text-align:center}
+.cc .claimh b{color:var(--text)}
+.conf{position:absolute;top:-30px;pointer-events:none;animation:fall 2.8s ease-in forwards}
+@keyframes fall{to{transform:translateY(105vh) rotate(420deg)}}
+
+/* bottom sheet */
+.sh{position:fixed;left:50%;bottom:0;z-index:41;width:min(430px,100%);max-height:90dvh;overflow-y:auto;overscroll-behavior:contain;border-radius:30px 30px 0 0;padding:10px 20px calc(24px + env(safe-area-inset-bottom,0px));
+  background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(250,248,244,.97));-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
+  box-shadow:0 -20px 50px -20px rgba(40,25,10,.45);transform:translate(-50%,105%);transition:transform .55s var(--ease)}
+.sh.open{transform:translate(-50%,0)}
+.grab{width:38px;height:4px;border-radius:2px;background:var(--line);margin:0 auto 14px}
+.bn{position:relative;overflow:hidden;isolation:isolate;height:118px;border-radius:22px;display:grid;place-items:center;background:var(--bnbg);color:var(--bnfg,#3a2c1f);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 12px 24px -16px rgba(40,25,10,.6)}
+.bn .ic{width:42px;height:42px;stroke-width:1.4}
+.bn .deco{position:absolute;right:-26px;top:-22px;z-index:-1;opacity:.16;fill:currentColor}
+.bn .bv{text-align:center}
+.bn .bv em{display:block;font-style:normal;font-size:.625rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;opacity:.75}
+.bn .bv b{display:block;font-size:2.25rem;font-weight:700;letter-spacing:-.02em;line-height:1.1;color:var(--gold-hi)}
+.sk{margin-top:16px;font-size:.6875rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--text-2)}
+.sh h3{font-size:1.375rem;font-weight:700;letter-spacing:-.015em;margin-top:2px}
+.tg{margin-top:2px;font-size:.875rem;font-weight:700;color:var(--num-b)}
+.sd{margin:8px 0 14px;font-size:.875rem;color:var(--text-2)}
+.sh .dl:last-of-type{border-bottom:1px solid var(--line)}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;border-radius:22px;margin:8px 0 0}
+.opts button{padding:11px 6px;border-radius:999px;font-size:.8125rem;font-weight:600;color:var(--text-2)}
+.opts button.thumb{color:var(--text);font-weight:700}
+.cost{margin-top:16px;padding:2px 18px;border-radius:20px}
+.cost div{display:flex;justify-content:space-between;align-items:center;padding:12px 0;font-size:.8125rem;color:var(--text-2)}
+.cost div+div{border-top:1px solid var(--line)}
+.cost b{font-weight:700;color:var(--text);font-variant-numeric:tabular-nums}
+.cost b.ok{color:var(--num-b)}
+.cost b.no{color:#b5121a}
+.sh .pill{width:100%;justify-content:center;height:50px;margin-top:16px}
+.fine1{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:10px;font-size:.6875rem;color:var(--text-2);text-align:center}
+.fine1 .ic{width:13px;height:13px;color:var(--num-b)}
+.fine{margin-top:14px;padding:12px 14px;border-radius:16px;background:var(--cream-2)}
+.fine li,.tc li{position:relative;padding-left:14px;font-size:.75rem;color:var(--text-2);line-height:1.45}
+.fine li+li{margin-top:4px}
+.fine li::before,.tc li::before{content:"";position:absolute;left:0;top:.5em;width:5px;height:5px;border-radius:1px;transform:rotate(45deg);background:var(--gold-lo)}
+.tc{margin-top:14px}
+.tc li{font-size:.8125rem;color:var(--text);padding:10px 0 10px 18px;border-top:1px solid var(--line)}
+.tc li::before{top:1.15em}
+.lnk{display:block;margin:12px auto 0;font-size:.75rem;font-weight:600;color:var(--num-b);text-decoration:underline;text-underline-offset:3px}
+
+.toast{position:fixed;left:50%;top:16px;z-index:50;transform:translate(-50%,-20px);padding:10px 18px;border-radius:999px;font-size:.75rem;font-weight:600;color:#fff;
+  background:rgba(77,61,46,.86);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 10px 24px -10px rgba(40,25,10,.6);
+  opacity:0;transition:all .45s var(--ease);pointer-events:none;white-space:nowrap}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ===== treasure map ===== */
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes ring{0%{transform:scale(.8);opacity:1}100%{transform:scale(1.6);opacity:0}}
+@keyframes pop{0%{transform:scale(1.9)}55%{transform:scale(.9)}100%{transform:none}}
+.tmap{position:relative;border-radius:30px;overflow:hidden;isolation:isolate;
+  background:radial-gradient(120% 60% at 20% 0%,#fbf5e2 0%,transparent 60%),radial-gradient(90% 50% at 100% 100%,#eadfc6 0%,transparent 70%),linear-gradient(180deg,#f7f0d5,#efe6d0);
+  box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px rgba(98,79,61,.10),inset 0 0 60px rgba(156,133,112,.18),0 18px 36px -24px rgba(98,79,61,.55)}
+.tmap svg.mp{position:absolute;left:0;top:0;overflow:visible}
+.isl{fill:rgba(255,255,255,.38);stroke:rgba(156,133,112,.28);stroke-width:1.2}
+.isl2{fill:none;stroke:rgba(156,133,112,.16);stroke-width:1}
+.wave{fill:none;stroke:rgba(156,133,112,.35);stroke-width:1.3;stroke-linecap:round}
+.tr-base{fill:none;stroke:#b8a78c;stroke-width:2.6;stroke-linecap:round;stroke-dasharray:.1 9}
+.tr-done{fill:none;stroke:url(#tg);stroke-width:3.6;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.3s .2s var(--ease) forwards}
+.tr-done.still{animation:none;stroke-dashoffset:0}
+.tr-next{fill:none;stroke:#dcae48;stroke-width:3;stroke-linecap:round;stroke-dasharray:.1 9;animation:steps 1s linear infinite}
+@keyframes steps{to{stroke-dashoffset:-9.1}}
+.compass{position:absolute;right:14px;top:14px;width:58px;height:58px;z-index:1;opacity:.85}
+.compass .rose{animation:sway 6s ease-in-out infinite;transform-origin:29px 29px}
+@keyframes sway{50%{transform:rotate(8deg)}}
+.stop{position:absolute;z-index:3;transform:translate(-50%,-50%);display:flex;align-items:center;gap:10px}
+.stop.R{flex-direction:row-reverse;text-align:right}
+.stop{transform:translate(-22px,-50%)}
+.stop.R{transform:translate(calc(-100% + 22px),-50%)}
+.mk{position:relative;flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;transition:transform .25s var(--ease)}
+.stop:hover .mk{transform:translateY(-2px)}
+.mk .n{font-size:.875rem;font-weight:700;color:var(--text-2);font-variant-numeric:tabular-nums}
+.stop.lock .mk{opacity:.7}
+.stop.lock .mk .n{color:var(--taupe)}
+.mk .lk{position:absolute;right:-3px;bottom:-3px;width:18px;height:18px;border-radius:50%;display:grid;place-items:center;background:var(--bg2);color:var(--taupe);box-shadow:0 1px 4px rgba(98,79,61,.25)}
+.mk .lk .ic{width:10px;height:10px}
+.stop.done .mk{background:linear-gradient(180deg,#fff7df,#f3e2b2);box-shadow:inset 0 1px 0 #fff,0 0 0 1.5px rgba(220,174,72,.6),0 8px 16px -8px rgba(168,121,31,.7)}
+.stop.cur .mk::before,.stop.cur .mk::after{content:"";position:absolute;inset:-4px;border-radius:50%;box-shadow:0 0 0 2px var(--gold);animation:ring 2s ease-out infinite}
+.stop.cur .mk::after{animation-delay:1s}
+.stop.just .mk{animation:pop .9s var(--ease)}
+.stop .lb b{display:block;font-size:.8125rem;font-weight:700;color:var(--text);line-height:1.2;white-space:nowrap}
+.stop .lb em{display:block;font-size:.6875rem;font-style:normal;color:var(--num-b);font-weight:600;white-space:nowrap}
+.stop .lb small{display:flex;align-items:center;gap:3px;font-size:.625rem;font-weight:600;color:var(--text-2);white-space:nowrap;margin-top:1px}
+.stop.R .lb small{justify-content:flex-end}
+.stop .lb small .ic{width:10px;height:10px;color:var(--num-b)}
+.stop.pk .lb em{color:#b5121a}
+.stop.lock .lb b{color:var(--text-2);font-weight:600}
+.stop.lock .lb em{color:var(--taupe)}
+.here{position:absolute;left:-6px;bottom:calc(100% + 10px);display:flex;align-items:center;gap:5px;height:24px;padding:0 10px;border-radius:999px;
+  font-size:.625rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff;white-space:nowrap;
+  background:linear-gradient(170deg,var(--hero-a),var(--hero-c));box-shadow:0 6px 14px -6px rgba(40,25,10,.7);animation:bob 1.8s ease-in-out infinite}
+.stop.R .here{left:auto;right:-6px}
+.here::after{content:"";position:absolute;left:22px;bottom:-4px;width:8px;height:8px;margin-left:-4px;background:var(--hero-c);transform:rotate(45deg);border-radius:1px}
+.stop.R .here::after{left:auto;right:18px}
+@keyframes bob{50%{translate:0 -4px}}
+.chest{position:absolute;z-index:3;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;text-align:center}
+.chest svg{width:92px;height:80px;overflow:visible;filter:drop-shadow(0 12px 14px rgba(120,80,20,.35))}
+.chest .lid{transform-origin:16px 34px;transition:transform .9s var(--ease)}
+.chest.open .lid{transform:rotate(-24deg) translate(-2px,-6px)}
+.chest .glow{opacity:0;transition:opacity .9s}
+.chest.open .glow{opacity:1;animation:glowp 2.4s ease-in-out infinite}
+@keyframes glowp{50%{opacity:.55}}
+.chest b{margin-top:6px;font-size:.8125rem;font-weight:700;color:var(--text)}
+.chest em{white-space:nowrap;font-style:normal;font-size:.6875rem;color:var(--text-2)}
+.chest .track{width:120px;height:6px;margin-top:6px}
+.tmap .foot{position:absolute;left:0;right:0;bottom:12px;text-align:center;font-size:.625rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(98,79,61,.45);font-weight:600}
+
+.empty{padding:26px 22px;border-radius:26px;text-align:center}
+.empty .ic{width:28px;height:28px;margin:0 auto 10px;color:var(--taupe)}
+.empty b{display:block;font-size:.9375rem;color:var(--text)}
+.empty p{font-size:.8125rem;color:var(--text-2);margin:6px 0 14px}
+
+/* ===== wallet (Apple Wallet style stack) ===== */
+.wallet{position:relative;margin-top:2px;transition:height .55s var(--ease);clip-path:inset(-30px -30px 0 -30px)}
+.wallet.noanim .wc{transition:none}
+.wc{position:absolute;left:0;right:0;top:0;height:196px;border-radius:20px;overflow:hidden;cursor:pointer;color:var(--fg);background:var(--bg);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 -2px 12px -6px rgba(40,25,10,.35),0 18px 34px -20px rgba(40,25,10,.55);
+  transform-origin:50% 0;transition:transform .6s var(--ease),height .6s var(--ease),box-shadow .4s}
+.wc.lk{filter:grayscale(.6) brightness(1.04)}
+.wc.lk.open{filter:grayscale(.25)}
+.wc.rd{filter:grayscale(.9) brightness(1.12) contrast(.85)}
+.wc.new{animation:slidein .8s var(--ease) both}
+@keyframes slidein{from{translate:0 120px;opacity:0}to{translate:0 0;opacity:1}}
+.wc::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(80% 60% at 90% 0%,rgba(255,255,255,.28),transparent 60%)}
+.wc::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.25) 50%,transparent 60%);background-size:260% 100%;animation:sheen 4.5s linear infinite}
+.wc .deco{position:absolute;right:-30px;top:30px;opacity:.12;fill:var(--fg);pointer-events:none}
+.wi{position:relative;z-index:1;padding:16px 18px 18px}
+.wtop{display:flex;align-items:center;gap:12px;height:34px}
+.wic{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;flex:none;background:var(--tile);box-shadow:inset 0 1px 0 rgba(255,255,255,.4)}
+.wic .ic{width:19px;height:19px}
+.wn{flex:1;min-width:0}
+.wn b{display:block;font-size:1rem;font-weight:700;letter-spacing:-.01em;line-height:1.15}
+.wn em{display:block;font-size:.6875rem;font-style:normal;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wexp{text-align:right}
+.wexp em{display:block;font-size:.5625rem;font-style:normal;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--sub)}
+.wexp b{display:block;font-size:.875rem;font-weight:700;font-variant-numeric:tabular-nums}
+.wbig{margin-top:34px;display:flex;align-items:center;gap:14px;transition:opacity .35s}
+.wbig .ic{width:50px;height:50px;stroke-width:1.2;opacity:.9}
+.wbig div em{display:block;font-size:.5625rem;font-style:normal;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--sub)}
+.wbig div b{display:block;font-size:1.25rem;font-weight:700;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.wbig div{flex:1;min-width:0}
+.wbig div b.sm{font-size:.9375rem;letter-spacing:0}
+.wbig .track{display:block;height:6px;margin-top:8px;max-width:180px;background:var(--tile)}
+.wrow .track{display:block;height:6px;background:var(--tile)}
+.wtap{position:absolute;right:18px;bottom:16px;font-size:.6875rem;font-weight:600;color:var(--sub);transition:opacity .35s}
+.wdet{opacity:0;visibility:hidden;transition:opacity .35s .1s,visibility 0s .45s}
+.wc.open .wdet{opacity:1;visibility:visible;transition:opacity .45s .2s;cursor:default}
+.wc.open .wbig,.wc.open .wtap{display:none}
+.wrow{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px;padding:12px 0;border-top:1px solid var(--line2)}
+.wrow:first-child{margin-top:16px}
+.wrow span{font-size:.5625rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--sub);padding-top:3px}
+.wrow b{font-size:.875rem;font-weight:700}
+.wrow em{display:block;font-size:.6875rem;font-style:normal;color:var(--sub);margin-top:1px}
+.wrow p{font-size:.8125rem;line-height:1.45}
+.wstaff{display:flex;align-items:center;gap:12px;margin-top:4px;padding:14px;border-radius:16px;background:var(--tile)}
+.wstaff .ic{width:26px;height:26px}
+.wstaff b{display:block;font-size:.9375rem;font-weight:700;line-height:1.25}
+.wstaff em{display:block;font-size:.6875rem;font-style:normal;color:var(--sub);margin-top:2px}
+.wbtns{display:grid;grid-template-columns:1fr;gap:8px;margin-top:14px}
+.wbtns button{height:44px;border-radius:999px;font-size:.8125rem;font-weight:700;padding:0 18px;background:var(--fg);color:var(--btn)}
+.wnote{font-size:.625rem;color:var(--sub);text-align:center;margin-top:8px}
+.wempty{padding:20px;border-radius:22px;text-align:center;font-size:.8125rem;color:var(--text-2)}
+.wr .gi{width:40px;height:26px;border-radius:7px;display:grid;place-items:center;background:var(--bg);color:var(--fg);opacity:.6;box-shadow:0 4px 10px -5px rgba(40,25,10,.5)}
+.wr .gi .ic{width:13px;height:13px}
+
+/* v3: perk ready on map, perk rows on journey, demo panel */
+.stop.rdy .mk::before{content:"";position:absolute;inset:-4px;border-radius:50%;box-shadow:0 0 0 2px var(--gold-lo);animation:ring 2s ease-out infinite}
+.stop.rdy .lb small{color:var(--num-b)}
+.stop .lb small .dm{margin-right:1px}
+.wr .m .track{height:5px;margin-top:6px;max-width:170px}
+.wr.got{opacity:.7}
+.note button{display:inline-flex;align-items:center;gap:4px;margin-left:4px;font-size:inherit;font-weight:700;color:var(--num-b);text-decoration:underline;text-underline-offset:2px}
+.note button .ic{width:12px;height:12px}
+.dbal{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.dbal div{padding:12px 14px;border-radius:16px;background:var(--cream-2)}
+.dbal span{display:block;font-size:.5625rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--text-2)}
+.dbal b{display:block;font-size:1.375rem;font-weight:700;color:var(--text);font-variant-numeric:tabular-nums;margin-top:2px}
+.dbal em{display:block;font-size:.625rem;font-style:normal;color:var(--text-2)}
+.cfg{margin-top:12px;padding:12px 14px;border-radius:18px;box-shadow:inset 0 0 0 1px var(--line);background:#fff}
+.cfg>b{font-size:.8125rem;font-weight:700}
+.cfgr{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.cfgr label{display:flex;flex-direction:column;gap:4px;font-size:.625rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-2)}
+.cfgr label[hidden]{display:none}
+.cfgr select,.cfgr input{font:inherit;font-size:16px;letter-spacing:0;text-transform:none;height:40px;border-radius:12px;border:1px solid var(--line);background:var(--bg2);color:var(--text);padding:0 10px}
+.cfgr input{width:100px}
+.cfgr select:focus,.cfgr input:focus{outline:2px solid var(--gold);outline-offset:1px}
+.mc.fin .r2 h3{font-size:1.5rem}
+
+/* v4: 3 missions with a gift-or-challenge choice, offer banners with images */
+.topr{display:flex;justify-content:flex-end}
+.stop .lb i{display:block;font-style:normal;font-size:.5625rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--taupe)}
+.mc .val.sm{font-size:.9375rem}
+.ch2{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin-top:14px}
+.cho{display:flex;align-items:center;gap:10px;min-width:0;padding:10px;border-radius:18px;text-align:left;color:#fff;
+  background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px rgba(241,202,109,.22)}
+.cho:hover{background:rgba(255,255,255,.12)}
+.ci{width:40px;height:40px;flex:none;border-radius:12px;display:grid;place-items:center;font-size:1rem;font-weight:700;background-size:cover;background-position:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.35)}
+.ci .ic{width:19px;height:19px}
+.ci.big{width:52px;height:52px;border-radius:16px}
+.ci.big .ic{width:24px;height:24px}
+.cx{min-width:0}
+.cx em{display:block;font-style:normal;font-size:.5625rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.cx b{display:block;font-size:.8125rem;font-weight:700;line-height:1.2}
+.or{font-size:.625rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-hi)}
+.bn.sm{height:96px;border-radius:18px}
+.bn.sm .ic{width:30px;height:30px}
+.bn.sm .bv b{font-size:1.625rem}
+.bn.img{box-shadow:inset 0 0 0 1px rgba(0,0,0,.06),0 12px 24px -16px rgba(40,25,10,.6)}
+.upl{display:flex;align-items:center;gap:6px;margin:8px 0 0 auto;font-size:.6875rem;font-weight:600;color:var(--num-b)}
+.upl .ic{width:13px;height:13px}
+.opt{margin-top:12px;padding:8px;border-radius:24px;background:#fff;box-shadow:inset 0 0 0 1px rgba(98,79,61,.08),0 10px 24px -16px rgba(98,79,61,.45)}
+.opt .ob{padding:12px 8px 6px}
+.opt .ob b{display:block;font-size:1.0625rem;font-weight:700;margin-top:6px;line-height:1.25}
+.opt .ob p{font-size:.8125rem;color:var(--text-2);margin-top:2px}
+.opt .pill{margin-top:12px;height:48px}
+.ordiv{display:flex;align-items:center;gap:10px;margin:12px 4px 0;font-size:.625rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--text-2)}
+.ordiv::before,.ordiv::after{content:"";flex:1;height:1px;background:var(--line)}
+.pill.ol{color:var(--text);background:#fff;box-shadow:inset 0 0 0 1.5px var(--gold-lo)}
+.pill.ol .ic{color:var(--num-b)}
+.pill.gl{color:var(--num-b)}
+.cbox{margin-top:12px;padding:16px;border-radius:20px;background:#fff;box-shadow:inset 0 0 0 1px rgba(98,79,61,.08)}
+.cbox b{display:block;font-size:1.0625rem;font-weight:700;margin-top:6px}
+.ogrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ogrid.in{margin-top:14px}
+.otile{display:block;text-align:left;padding:6px;border-radius:20px;background:#fff;box-shadow:inset 0 0 0 1px rgba(98,79,61,.08),0 8px 18px -14px rgba(98,79,61,.45)}
+.otile .bn{height:84px;border-radius:15px}
+.otile .bn .ic{width:26px;height:26px}
+.otile .bn .bv b{font-size:1.375rem}
+.otile .bn .bv em{font-size:.5rem}
+.ot{display:block;padding:8px 6px 4px}
+.ot b{display:block;font-size:.8125rem;font-weight:700;line-height:1.2}
+.ot em{display:flex;align-items:center;gap:4px;font-size:.625rem;font-style:normal;color:var(--text-2);margin-top:2px}
+.ot em .ic{width:11px;height:11px;color:var(--num-b)}
+.otile.got{box-shadow:inset 0 0 0 2px var(--gold-lo),0 8px 18px -14px rgba(98,79,61,.45)}
+.plist{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.pko{position:relative;display:grid;grid-template-columns:96px minmax(0,1fr) 24px;gap:12px;align-items:center;padding:6px 14px 6px 6px;border-radius:20px;text-align:left;background:#fff;box-shadow:inset 0 0 0 1px rgba(98,79,61,.1)}
+.pko .bn{height:72px;border-radius:15px}
+.pko .bn .ic{width:24px;height:24px}
+.pko .bn .bv b{font-size:1.25rem}
+.pko .bn .bv em{font-size:.5rem}
+.pt b{display:block;font-size:.9375rem;font-weight:700}
+.pt em{display:block;font-size:.75rem;font-style:normal;color:var(--text-2);line-height:1.35}
+.rad{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 0 0 1.5px var(--taupe)}
+.rad .ic{width:13px;height:13px}
+.pko.on{box-shadow:inset 0 0 0 2px var(--gold-lo),0 10px 22px -14px rgba(168,121,31,.6)}
+.pko.on .rad{background:linear-gradient(180deg,var(--gold-hi),var(--gold-lo));box-shadow:none;color:var(--text)}
+.prm{display:flex;align-items:center;gap:14px;width:100%;padding:14px 16px;border-radius:22px;text-align:left;color:#fff;
+  background:radial-gradient(80% 90% at 0% 0%,rgba(241,202,109,.25),transparent 60%),linear-gradient(170deg,var(--hero-a),var(--hero-c));box-shadow:0 14px 28px -18px rgba(40,25,10,.8)}
+.prm span{flex:1;min-width:0}
+.prm b{display:block;font-size:.9375rem;font-weight:700}
+.prm em{display:block;font-size:.75rem;font-style:normal;color:rgba(255,255,255,.75)}
+.prm>svg:last-child{width:14px;height:14px;color:var(--gold-hi)}
+.dbal.one{grid-template-columns:1fr}
+.irow{display:grid;grid-template-columns:52px minmax(0,1fr) auto auto;gap:10px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.ith{width:52px;height:36px;border-radius:10px;display:grid;place-items:center;font-weight:700;font-size:.875rem;overflow:hidden}
+.ith .ic{width:16px;height:16px}
+.in b{display:block;font-size:.8125rem;font-weight:700}
+.in em{display:block;font-size:.6875rem;font-style:normal;color:var(--text-2)}
+.ib{height:34px;padding:0 14px;border-radius:999px;font-size:.75rem;font-weight:700;color:var(--num-b);box-shadow:inset 0 0 0 1.5px var(--gold-lo)}
+.ib.x{padding:0 10px;color:var(--text-2);box-shadow:inset 0 0 0 1px var(--line)}
+.cc .nx{margin:-6px 0 14px;font-size:.75rem;font-weight:600;color:var(--num-b);text-align:center}
+.wc.hasimg .wic{background:rgba(0,0,0,.25);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+
+/* v5: compact map, per-option sheets, keepsake items, redeemable costs */
+.tmap.sm{border-radius:26px}
+.stop.v{flex-direction:column;gap:6px;width:116px;text-align:center;transform:translate(-50%,-22px)}
+.stop.v .lb{padding:3px 8px 4px;border-radius:10px;background:rgba(247,240,213,.82);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.stop.v .lb small{justify-content:center;white-space:normal}
+.stop.v .lb small .ic{width:10px;height:10px}
+.stop.v .here{left:50%;right:auto;transform:translateX(-50%)}
+.stop.v .here::after{left:50%;right:auto}
+.stop.v .mk .chs{display:block;overflow:visible}
+.chs .lid{transform-origin:16px 34px;transition:transform .9s var(--ease)}
+.stop.open .chs .lid{transform:rotate(-24deg) translate(-2px,-6px)}
+.mc .val small{display:block;font-size:.625rem;font-weight:600;letter-spacing:.06em;color:rgba(255,255,255,.7);text-align:right}
+.cost b{display:inline-flex;align-items:center;gap:4px}
+.cost b .ic{width:13px;height:13px}
+.cost div.cb{display:block;padding:0 0 12px;border-top:0}
+.cost .cb .track{display:block;height:6px}
+.igrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.itm{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:8px 8px 10px;border-radius:18px;text-align:left;background:#fff;box-shadow:inset 0 0 0 1px rgba(98,79,61,.1)}
+.itm .iim{display:grid;place-items:center;width:100%;height:72px;border-radius:12px;margin-bottom:6px;background-size:cover;background-position:center;background-color:var(--cream-2);color:var(--num-b)}
+.itm .iim .ic{width:28px;height:28px;stroke-width:1.5}
+.itm b{font-size:.8125rem;font-weight:700}
+.itm em{font-size:.6875rem;font-style:normal;color:var(--text-2);line-height:1.3}
+.itm .rad{position:absolute;right:12px;top:12px;background:#fff}
+.itm.on{box-shadow:inset 0 0 0 2px var(--gold-lo),0 10px 20px -14px rgba(168,121,31,.6)}
+.itm.on .rad{background:linear-gradient(180deg,var(--gold-hi),var(--gold-lo));box-shadow:none;color:var(--text)}
+.orow{display:flex;align-items:center;gap:12px;width:100%;margin-top:10px;padding:10px 14px 10px 10px;border-radius:20px;text-align:left;background:#fff;box-shadow:inset 0 0 0 1px rgba(98,79,61,.1),0 8px 18px -14px rgba(98,79,61,.4)}
+.orow .ci{width:52px;height:52px;border-radius:14px}
+.orow .ci .ic{width:22px;height:22px}
+.orow>svg{width:13px;height:13px;color:var(--taupe);flex:none}
+.cx2{flex:1;min-width:0}
+.cx2 em{display:block;font-style:normal;font-size:.5625rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text-2)}
+.cx2 b{display:block;font-size:.9375rem;font-weight:700;line-height:1.25}
+.cx2 small{display:block;font-size:.75rem;color:var(--text-2)}
+.pko{grid-template-columns:84px minmax(0,1fr) 14px}
+.pko>svg{width:13px;height:13px;color:var(--taupe)}
+.pt small{display:flex;align-items:center;gap:4px;margin-top:3px;font-size:.6875rem;font-weight:600;color:var(--num-b)}
+.pt small .ic{width:11px;height:11px}
+.sh .pill.gl{margin-top:12px}
+
+/* v6 */
+.bn.amt .bv b{color:inherit}
+.bn.amt .bv b{background:linear-gradient(180deg,#fff6d8,#f1ca6d);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.pdet{margin-top:10px;padding:4px 14px 2px;border-radius:20px;background:#fff;box-shadow:inset 0 0 0 1px rgba(98,79,61,.08)}
+.pdet .upl{margin-top:10px}
+.pdet .sd{margin:6px 0 10px}
+.pdet .dl:last-of-type{border-bottom:0}
+.pdet .cost{margin:8px -4px 12px;box-shadow:inset 0 0 0 1px rgba(98,79,61,.08)}
+.pko .pt small{color:var(--num-b)}
+.pko .rad{justify-self:end}
+.vst span{text-align:center}
+.pko:has(.rad){grid-template-columns:84px minmax(0,1fr) 24px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="tg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f8dd93"/><stop offset="1" stop-color="#c99a3a"/></linearGradient>
+    <linearGradient id="gg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbe4a2"/><stop offset="1" stop-color="#e2b24b"/></linearGradient>
+    <symbol id="bd" viewBox="0 0 106 202.4"><path d="M53 0 C65.97 39.53 81.24 69.53 106.00 101.20 C81.24 132.87 65.97 162.87 53.00 202.40 C40.03 162.87 24.76 132.87 0.00 101.20 C24.76 69.53 40.03 39.53 53.00 0.00 Z"/></symbol>
+  </defs>
+</svg>
+
+<header class="hero" id="hero"></header>
+<main class="wrap bd" id="body"></main>
+
+<div class="ctaw" id="ctaw"></div>
+<div class="ov" id="ov"></div>
+<div class="ov" id="shov" onclick="closeSheet()" style="z-index:39"></div>
+<div class="sh" id="sh" role="dialog" aria-modal="true"></div>
+<input type="file" id="upl" accept="image/*" hidden onchange="onUpload(this)">
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+var IC={
+ coffee:'<path d="M5 9h11v5a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z"/><path d="M16 10h2a2 2 0 0 1 0 4h-2"/><path d="M8 3v3M12 3v3"/>',
+ car:'<path d="M5 14l1.5-5h11L19 14"/><rect x="3" y="14" width="18" height="5" rx="2"/><circle cx="7.5" cy="16.5" r=".8" fill="currentColor"/><circle cx="16.5" cy="16.5" r=".8" fill="currentColor"/>',
+ gift:'<rect x="4" y="9" width="16" height="11" rx="2"/><path d="M12 9v11M4 14h16"/><path d="M12 9c-3 0-4.5-4-2-4s2 4 2 4zm0 0c3 0 4.5-4 2-4s-2 4-2 4z"/>',
+ spa:'<path d="M12 20c-4.4 0-8-3.1-8-7 3.4 0 6.4 1.6 8 4.2 1.6-2.6 4.6-4.2 8-4.2 0 3.9-3.6 7-8 7z"/><path d="M12 16.5c-1.8-2.3-2.2-5.4 0-9.5 2.2 4.1 1.8 7.2 0 9.5z"/>',
+ bed:'<path d="M3 19V7M3 15h18v4M21 15v-3a3 3 0 0 0-3-3h-8v6"/><circle cx="6.5" cy="11.5" r="2"/>',
+ chips:'<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3"/>',
+ cards:'<rect x="4" y="7" width="11" height="14" rx="2"/><path d="M9 3h9a2 2 0 0 1 2 2v12"/><path d="M9.5 12l-2 2 2 2 2-2z"/>',
+ key:'<circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M14.5 8.5l2 2"/>',
+ pin:'<circle cx="12" cy="9" r="6"/><path d="M9 14l-2 7 5-2 5 2-2-7"/><path d="M12 6.5l.9 1.8 2 .3-1.4 1.4.3 2-1.8-.9-1.8.9.3-2-1.4-1.4 2-.3z"/>',
+ tea:'<path d="M4 10h12v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M16 11h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M8 3.5c0 1.5 1.5 1.5 1.5 3M12 3.5c0 1.5 1.5 1.5 1.5 3"/>',
+ pyramid:'<path d="M12 3L2.5 20h19z"/><path d="M7.3 12h9.4M5 16.3h14"/>',
+ slot:'<rect x="3" y="5" width="14" height="15" rx="2.5"/><path d="M6.5 10h7v5h-7zM10 10v5"/><path d="M17 9h2v4"/><circle cx="19" cy="14.5" r="1.3"/>',
+ coin:'<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/>',
+ star:'<path d="M12 3l2.5 5.5 6 .7-4.4 4.1 1.2 6L12 16.5 6.7 19.3l1.2-6L3.5 9.2l6-.7z"/>',
+ lock:'<rect x="6" y="11" width="12" height="9" rx="2"/><path d="M9 11V8a3 3 0 0 1 6 0v3"/>',
+ check:'<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+ wallet:'<rect x="3" y="6" width="18" height="14" rx="3"/><path d="M3 10h18M16 15h2"/>',
+ doc:'<path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/>',
+ info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5v.5"/>',
+ gear:'<circle cx="12" cy="12" r="3"/><path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M18.4 5.6l-1.8 1.8M7.4 16.6l-1.8 1.8"/>',
+ image:'<rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/>',
+ bolt:'<path d="M13 3L5 13h6l-1 8 8-10h-6z"/>',
+ staff:'<circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-6.5 7-6.5s7 2.6 7 6.5"/><path d="M12 13.5l-1.2 2.5L12 20l1.2-4z"/>'
+};
+function svg(n){return '<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+IC[n]+'</svg>'}
+function dia(h,cls,style){return '<svg class="dm '+(cls||'')+'" style="--h:'+h+'px;'+(style||'')+'" viewBox="0 0 106 202.4" aria-hidden="true"><use href="#bd"/></svg>'}
+function chev(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>'}
+function trophy(sz,cls){return '<svg class="'+(cls||'')+'" width="'+sz+'" height="'+sz+'" viewBox="0 0 64 64" aria-hidden="true">'+
+  '<path d="M18 9h28v14a14 14 0 0 1-28 0z" fill="url(#gg)"/>'+
+  '<path d="M18 14H10a9 9 0 0 0 10 11M46 14h8a9 9 0 0 1-10 11" fill="none" stroke="#f1ca6d" stroke-width="3.2" stroke-linecap="round"/>'+
+  '<rect x="29" y="36" width="6" height="10" fill="url(#gg)"/><rect x="20" y="46" width="24" height="7" rx="2.5" fill="url(#gg)"/>'+
+  '<use href="#bd" x="29" y="13" width="6" height="12" fill="#ed1c24"/></svg>'}
+function chestSVG(sz){return '<svg class="chs" width="'+sz+'" height="'+Math.round(sz*.87)+'" viewBox="0 0 92 80" aria-hidden="true">'+
+  '<rect x="10" y="34" width="72" height="40" rx="6" fill="#6f5947"/><rect x="10" y="44" width="72" height="5" fill="url(#gg)"/>'+
+  '<rect x="20" y="34" width="5" height="40" fill="url(#gg)"/><rect x="67" y="34" width="5" height="40" fill="url(#gg)"/>'+
+  '<g class="lid"><path d="M10 36V26Q10 10 46 10Q82 10 82 26V36Z" fill="#8a705a"/><path d="M10 30H82" stroke="url(#gg)" stroke-width="5"/><rect x="20" y="13" width="5" height="23" fill="url(#gg)"/><rect x="67" y="13" width="5" height="23" fill="url(#gg)"/></g>'+
+  '<rect x="38" y="38" width="16" height="18" rx="4" fill="url(#gg)"/><use href="#bd" x="42.5" y="40" width="7" height="13.4" fill="#ed1c24"/></svg>'}
+function fmt(n){return Number(n).toLocaleString('en-US')}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
+
+/* =====================================================================
+   CONFIG — set by the team.
+   Points from the system API, earned the same way:
+     • gaming points     → challenges / Free Play
+     • redeemable points → perks that have a `cost` (read from the API, number not shown to players)
+   A visit = one gaming day, 6:00 AM to 5:59 AM the next day.
+   Every mission is a choice: the perk side OR the challenge side (Free Play).
+     perkMode 'one' : pick one perk from `perks`
+     perkMode 'all' : every perk in `perks` opens; each is redeemed on its own
+     free:true      : perks of that mission need no redeemable points
+   Challenge rule types (gaming points, counted only from the moment the challenge is accepted):
+     gday   : X pts within one visit (one gaming day)
+     visits : X pts in total across n visits (gaming days)
+     total  : X pts in total
+   Any offer can carry a banner `image` URL.
+   ===================================================================== */
+var CONFIG={
+ dayStart:6,  /* gaming day starts 6:00 AM, ends 5:59 AM next day */
+ offers:{
+  coffee:{kind:'perk',name:'Gold Coffee',line:'Brewed with 24K edible gold.',icon:'coffee',cat:'Dining',valid:14,cost:0,image:'',
+   desc:'Premium [Arabica %] coffee crowned with 24K edible gold leaf, inspired by Dubai’s legendary gold cappuccino. A golden moment, made for you.',
+   rows:[['Enjoy at','[Outlet name]'],['Hours','Daily [10:00 – 22:00]']],fine:['Perks cannot be exchanged for cash or Free Play.']},
+  tea:{kind:'perk',name:'Finest Tea',line:'A pot of rare loose-leaf tea.',icon:'tea',cat:'Dining',valid:14,cost:0,image:'',
+   desc:'A slow-brewed pot of [tea name], one of the finest leaves in our collection, served the way it should be.',
+   rows:[['Enjoy at','[Outlet name]'],['Hours','Daily [10:00 – 22:00]']],fine:['Perks cannot be exchanged for cash or Free Play.']},
+  table:{kind:'perk',name:'$100 Table Play',line:'$100 from the house to try our tables',icon:'cards',cat:'Table games',amount:'$100',amountLabel:'Table play',valid:14,cost:800,image:'',
+   desc:'The house gives you $100 to experience our table games. Take a seat at [Baccarat · Blackjack · Roulette] and play on us.',
+   rows:[['Play at','[Eligible tables]'],['Value','$100 table play']],fine:['For table games only. Cannot be exchanged for cash or Free Play.']},
+  pyramid:{kind:'perk',name:'Point Pyramid Bonus',line:'Extra $500 FC when you win the Friday draw',icon:'pyramid',cat:'Draw bonus',amount:'$500',amountLabel:'Extra FC',valid:30,cost:1000,image:'',
+   desc:'Win the Point Pyramid draw on a Friday and receive an extra $500 FC on top of your prize.',
+   rows:[['Draw','Every Friday · [time]'],['Bonus','Extra $500 FC']],fine:['Applies only when you win the Point Pyramid draw on a Friday during your journey.']},
+  maybach:{kind:'perk',name:'Maybach Pick-up & Drop-off',line:'A private Maybach to and from Vegas Club',icon:'car',cat:'Transfer',valid:60,cost:1500,image:'',
+   desc:'Arrive and leave in style. A private Maybach picks you up and takes you home after your visit. Up to 3 guests.',
+   rows:[['Service','Pick-up & drop-off'],['Booking','24 hours ahead']],fine:['Rides require 24-hour advance booking, subject to availability.']},
+  slotfg:{kind:'perk',name:'Slot Free Games Bonus',line:'Extra $500 FC when you hit free games on slots',icon:'slot',cat:'Slot bonus',amount:'$500',amountLabel:'Extra FC',valid:30,cost:1000,image:'',
+   desc:'Trigger a free-games feature on any eligible slot and receive an extra $500 FC.',
+   rows:[['Applies to','[Eligible slot machines]'],['Bonus','Extra $500 FC']],fine:['One bonus per journey. Our staff confirm the free-games feature on the machine.']},
+  fp100:{kind:'fp',name:'Welcome Free Play',value:100,valid:7,image:''},
+  fp200:{kind:'fp',name:'Rookie Free Play',value:200,valid:7,image:''},
+  fp300:{kind:'fp',name:'Pro Free Play',value:300,valid:7,image:''}
+ },
+ missions:[
+  {name:'Welcome',line:'Claim Your Welcome Gift Now!',perks:['coffee','tea'],perkMode:'one',free:true,reward:'fp100',rule:{type:'gday',pts:800}},
+  {name:'Rookie',line:'Raise the stakes.',perks:['table'],perkMode:'one',reward:'fp200',rule:{type:'gday',pts:1388}},
+  {name:'Pro',line:'Every perk, or the big one.',perks:['pyramid','maybach','slotfg'],perkMode:'all',reward:'fp300',rule:{type:'visits',pts:5000,n:3}}
+ ]
+};
+var TC=[
+ 'Free Play rewards unlock in order and are non‑cashable.',
+ '“1 visit” means one gaming day, from 6:00 AM to 5:59 AM the next day.',
+ 'Challenge points count only from the moment you accept the challenge; earlier visits and points do not count.',
+ 'Points spent on Perks are deducted from your balance and do not reduce Free Play mission progress.',
+ 'Perks cannot be exchanged for cash or Free Play.',
+ 'Rides require 24-hour advance booking, subject to availability.',
+ 'Vegas Club may amend or cancel this offer at any time.',
+ 'Complimentary rewards (dining, gifts, transfers) cannot be exchanged for cash or Free Play.'
+];
+var O=CONFIG.offers, MI=CONFIG.missions;
+Object.keys(O).forEach(function(k){O[k].id=k;if(O[k].kind==='fp')O[k].icon='coin'});
+var BUNDLE={id:'bundle',kind:'perk',name:'All 3 VIP perks',icon:'star',cat:'VIP perks',image:''};
+
+var THEME={
+ fp:{bg:'linear-gradient(150deg,#8a705a 0%,#5e4b3a 45%,#33281e 100%)',fg:'#ffffff',sub:'rgba(255,255,255,.72)',tile:'rgba(255,255,255,.14)',line2:'rgba(255,255,255,.16)',btn:'#4b3b2d'},
+ coffee:{bg:'linear-gradient(150deg,#fbe6ab 0%,#f1ca6d 42%,#c9962f 100%)',fg:'#3a2c1f',sub:'rgba(58,44,31,.68)',tile:'rgba(255,255,255,.42)',line2:'rgba(58,44,31,.16)',btn:'#f8dd93'},
+ tea:{bg:'linear-gradient(150deg,#e6e2c4 0%,#b9b07a 45%,#6f6a3c 100%)',fg:'#2f2c18',sub:'rgba(47,44,24,.7)',tile:'rgba(255,255,255,.4)',line2:'rgba(47,44,24,.16)',btn:'#e6e2c4'},
+ table:{bg:'linear-gradient(150deg,#2f6b55 0%,#1d4a3a 45%,#0f2a21 100%)',fg:'#ffffff',sub:'rgba(255,255,255,.74)',tile:'rgba(255,255,255,.16)',line2:'rgba(255,255,255,.18)',btn:'#1d4a3a'},
+ pyramid:{bg:'linear-gradient(150deg,#f2575c 0%,#ed1c24 40%,#9c0e15 100%)',fg:'#ffffff',sub:'rgba(255,255,255,.74)',tile:'rgba(255,255,255,.18)',line2:'rgba(255,255,255,.2)',btn:'#b5121a'},
+ maybach:{bg:'linear-gradient(150deg,#3b3b40 0%,#1f1f24 50%,#0b0b0e 100%)',fg:'#ffffff',sub:'rgba(255,255,255,.72)',tile:'rgba(255,255,255,.14)',line2:'rgba(255,255,255,.16)',btn:'#1f1f24'},
+ slotfg:{bg:'linear-gradient(150deg,#7a4fa0 0%,#4f2c74 45%,#2a143f 100%)',fg:'#ffffff',sub:'rgba(255,255,255,.74)',tile:'rgba(255,255,255,.16)',line2:'rgba(255,255,255,.18)',btn:'#4f2c74'},
+ bundle:{bg:'linear-gradient(150deg,#f8dd93 0%,#dcae48 45%,#8a6420 100%)',fg:'#3a2c1f',sub:'rgba(58,44,31,.68)',tile:'rgba(255,255,255,.4)',line2:'rgba(58,44,31,.16)',btn:'#f8dd93'}
+};
+var IMGT={fg:'#ffffff',sub:'rgba(255,255,255,.8)',tile:'rgba(255,255,255,.2)',line2:'rgba(255,255,255,.22)',btn:'#2b2118'};
+function baseT(o){return THEME[o.kind==='fp'?'fp':o.id]||THEME.fp}
+function th(o){var t=baseT(o);if(o.image)return Object.assign({},t,IMGT,{bg:'linear-gradient(170deg,rgba(25,15,8,.30),rgba(25,15,8,.80)),url(\''+o.image+'\') center/cover'});return t}
+function themeVars(o){var t=th(o);return '--bg:'+t.bg+';--fg:'+t.fg+';--sub:'+t.sub+';--tile:'+t.tile+';--line2:'+t.line2+';--btn:'+t.btn}
+function bgStyle(o){var t=baseT(o);return o.image?'background:url(\''+o.image+'\') center/cover;color:#fff':'background:'+t.bg+';color:'+t.fg}
+function typeOf(o){return o.kind==='fp'?'Free Play · $'+o.value:'VIP perk · '+o.cat}
+function short(o){return o.kind==='fp'?'$'+o.value+' Free Play':o.name}
+function banner(o,cls){
+  var inner=o.image?'':(o.kind==='fp'?'<div class="bv"><em>Free Play</em><b>$'+o.value+'</b></div>':o.amount?'<div class="bv"><em>'+o.amountLabel+'</em><b>'+o.amount+'</b></div>':svg(o.icon));
+  return '<div class="bn'+(cls?' '+cls:'')+(o.image?' img':'')+(o.amount&&o.kind!=='fp'?' amt':'')+'" style="'+bgStyle(o)+'">'+(o.image?'':dia(150,'deco'))+inner+'</div>';
+}
+function thumb(o,cls){return o.image?'<span class="ci img'+(cls?' '+cls:'')+'" style="background-image:url(\''+o.image+'\')"></span>':'<span class="ci'+(cls?' '+cls:'')+'" style="'+bgStyle(o)+'">'+(o.kind==='fp'?'$':svg(o.icon))+'</span>'}
+function perkThumb(i){var m=MI[i];return m.perkMode==='all'?thumb(BUNDLE):thumb(O[m.perks[0]])}
+function perkTitle(i){var m=MI[i];return m.perkMode==='all'?'All '+m.perks.length+' VIP perks':m.perks.map(function(id){return O[id].name}).join(' or ')}
+function perkCost(id,i){return (i!=null&&MI[i].free)?0:(O[id].cost||0)}
+
+/* ---- rule wording ---- */
+function ruleText(rule,html){
+  var P=html?'<b>'+fmt(rule.pts)+' points</b>':fmt(rule.pts)+' pts';
+  return {gday:'Earn '+P+' in one visit (1 gaming day)',visits:'Earn '+P+' in '+rule.n+' visits',total:'Earn '+P+' in total'}[rule.type];
+}
+function ruleShort(rule){return fmt(rule.pts)+' pts · '+{gday:'1 gaming day',visits:rule.n+' visits',total:'total'}[rule.type]}
+function ruleGoal(rule){var p=fmt(rule.pts);
+  return {gday:'Earn '+p+' gaming points within one visit. One visit is one gaming day, from 6:00 AM to 5:59 AM the next day. If the gaming day ends first, the count restarts the next gaming day.',
+    visits:'Earn '+p+' gaming points in total across '+rule.n+' visits. Each gaming day you play (6:00 AM – 5:59 AM) counts as one visit. If '+rule.n+' visits pass first, the count restarts.',
+    total:'Earn '+p+' gaming points in total. Every visit counts until you reach it.'}[rule.type]+' Counting starts the moment you accept: earlier visits and points do not count.';
+}
+
+/* ---- gaming day clock (demo) ---- */
+var G0=(function(){var d=new Date();if(d.getHours()<CONFIG.dayStart)d.setDate(d.getDate()-1);d.setHours(CONFIG.dayStart,0,0,0);return d})();
+function gdStart(n){var d=new Date(G0);d.setDate(d.getDate()+n-1);return d}
+function hm(d){var h=d.getHours(),m=d.getMinutes();return (h%12||12)+':'+String(m).padStart(2,'0')+' '+(h<12?'AM':'PM')}
+function gdLabel(n){var a=gdStart(n), b=new Date(a.getTime()+864e5-6e4);
+  return DW[a.getDay()]+' '+a.getDate()+' '+MS[a.getMonth()]+' '+hm(a)+' – '+DW[b.getDay()]+' '+hm(b)}
+
+/* ---- state ---- */
+function fresh(){return {tab:'map',gd:1,dayPts:0,gp:0,rp:0,
+  ms:MI.map(function(_,i){return {st:i===0?'open':'lock',pick:null,key:null}}),   /* lock · open (choose) · chal · done */
+  mp:{pts:0,visits:0,last:0},ent:[],shopOpen:false,shopGot:{},pick1:null,item:null,selG:null,newG:null,draw:true,just:-1}}
+var MS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'], DW=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+var S=fresh(), busy=false, lastSheet=null, nk=0;
+function curM(){for(var i=0;i<MI.length;i++)if(S.ms[i].st!=='done')return i;return -1}
+function chalM(){for(var i=0;i<MI.length;i++)if(S.ms[i].st==='chal')return i;return -1}
+function doneN(){return S.ms.filter(function(m){return m.st==='done'}).length}
+function entOf(key){return S.ent.find(function(e){return e.key===key})}
+function ents(kind){return S.ent.filter(function(e){return !kind||O[e.id].kind===kind})}
+function fpTotal(){return ents('fp').reduce(function(t,e){return t+O[e.id].value},0)}
+function readyN(){return S.ent.filter(function(e){return !e.red}).length}
+/* redeemable points still free to use: API balance minus perks chosen but not yet claimed with staff */
+function avail(){return S.rp-S.ent.reduce(function(t,e){return t+(!e.red&&e.cost?e.cost:0)},0)}
+function prog(i){var t=MI[i].rule.pts;if(S.ms[i].st==='done'&&S.ms[i].pick==='chal')return {have:t,need:t};
+  if(S.ms[i].st==='chal')return {have:Math.min(S.mp.pts,t),need:t};return {have:0,need:t}}
+function pct(p){return Math.round(Math.min(1,p.have/p.need)*100)}
+function rpPct(c){return Math.round(Math.max(0,Math.min(1,avail()/c))*100)}
+function windowTxt(i){var u=MI[i].rule;
+  if(!S.mp.visits)return 'Counting from now · play to start';
+  if(u.type==='gday')return 'Counting this gaming day · resets at 6:00 AM';
+  if(u.type==='visits')return 'Visit <b>'+S.mp.visits+'</b> of '+u.n+' · one gaming day = one visit';
+  return 'Every visit counts';
+}
+function expiry(e){var d=new Date(e.at);d.setDate(d.getDate()+O[e.id].valid);return d}
+function longDate(d){return DW[d.getDay()]+', '+d.getDate()+' '+MS[d.getMonth()]+' '+d.getFullYear()}
+function daysLeft(d){var t=new Date();t.setHours(0,0,0,0);return Math.round((d-t)/864e5)}
+
+var $hero=document.getElementById('hero'), $body=document.getElementById('body');
+
+/* ---- hero ---- */
+function chip(ic,b,t){return '<span class="chip">'+svg(ic)+'<b>'+b+'</b>'+t+'</span>'}
+function heroHTML(){
+  var tab=S.tab, rd=readyN(), pn=ents('perk').length, card;
+  var chips='<div class="chips">'+chip('coin','$'+fmt(fpTotal()),'Free Play')+chip('star',pn,'VIP perk'+(pn===1?'':'s'))+'</div>';
+  if(tab==='map'){
+    var u=doneN();
+    card='<div class="hd"><b>'+u+'</b><span>/ '+MI.length+' missions complete</span></div>'+
+      '<div class="bar"><span class="fill" style="width:'+Math.max(2,u/MI.length*100)+'%"></span></div>'+chips;
+  } else {
+    card='<div class="hd"><b>'+rd+'</b><span>reward'+(rd===1?'':'s')+' ready to claim</span></div>'+chips+
+      '<p class="mt">'+(rd?'Show a card to our staff to claim it':'Rewards you win appear here, ready for our staff')+'</p>';
+  }
+  var tabs=[['map','Journey',0],['rw','My Rewards',rd]], k=tabs.findIndex(function(x){return x[0]===tab});
+  return '<i class="orb o1"></i><i class="orb o2"></i><div class="wrap">'+
+    '<div class="topr"><button class="circ gd" type="button" onclick="openTC()" aria-label="Terms &amp; Conditions" title="Terms &amp; Conditions">'+svg('doc')+'</button></div>'+
+    '<div class="ttl"><span class="l">Elite</span><span class="r">Coupon</span></div>'+
+    /* inside the member app the rewards live on the app's own Reward page, so there is no My Rewards tab here */
+    (EMB?'':'<div class="seg gd" role="tablist" aria-label="View"><i class="knob thumb" style="transform:translateX(calc('+k+' * (100% + 2px)))"></i>'+
+      tabs.map(function(x){return '<button type="button" role="tab" aria-selected="'+(tab===x[0])+'" onclick="setTab(\''+x[0]+'\')">'+x[1]+(x[2]?'<span class="bdg">'+x[2]+'</span>':'')+'</button>'}).join('')+'</div>')+
+    '<div class="pc">'+card+'</div></div>';
+}
+/* ---- compact map: 3 missions ---- */
+function rnd(seed){return function(){seed=(seed*9301+49297)%233280;return seed/233280}}
+function blob(cx,cy,r,seed){var f=rnd(seed),pts=[],n=9,i;for(i=0;i<n;i++){var a=i/n*Math.PI*2,rr=r*(.78+f()*.4);pts.push([cx+Math.cos(a)*rr*1.25,cy+Math.sin(a)*rr*.8])}
+  var d='';for(i=0;i<n;i++){var p0=pts[(i-1+n)%n],p1=pts[i],p2=pts[(i+1)%n],p3=pts[(i+2)%n];
+    if(i===0)d+='M'+p1[0].toFixed(1)+' '+p1[1].toFixed(1);
+    d+='C'+(p1[0]+(p2[0]-p0[0])/6).toFixed(1)+' '+(p1[1]+(p2[1]-p0[1])/6).toFixed(1)+' '+(p2[0]-(p3[0]-p1[0])/6).toFixed(1)+' '+(p2[1]-(p3[1]-p1[1])/6).toFixed(1)+' '+p2[0].toFixed(1)+' '+p2[1].toFixed(1)}
+  return d+'Z'}
+function crSeg(p,k){var p0=p[Math.max(k-1,0)],p1=p[k],p2=p[k+1],p3=p[Math.min(k+2,p.length-1)];
+  return 'M'+p1.x.toFixed(1)+' '+p1.y.toFixed(1)+'C'+(p1.x+(p2.x-p0.x)/6).toFixed(1)+' '+(p1.y+(p2.y-p0.y)/6).toFixed(1)+' '+(p2.x-(p3.x-p1.x)/6).toFixed(1)+' '+(p2.y-(p3.y-p1.y)/6).toFixed(1)+' '+p2.x.toFixed(1)+' '+p2.y.toFixed(1)}
+function stopSub(i){var s=S.ms[i];
+  if(s.st==='done'){if(i===2&&s.pick==='gift')return dia(9,'gold')+'VIP perks open';var e=entOf(s.key);return svg('check')+(e.opt||short(O[e.id]))}
+  if(s.st==='open')return dia(9)+'Open';
+  if(s.st==='chal')return dia(9)+'Challenge '+pct(prog(i))+'%';
+  return svg('lock')+'Locked';
+}
+function mapHTML(){
+  var W=Math.max(300,($body.clientWidth||358)-32), H=222;
+  var P=[{x:W*.07,y:30},{x:W*.18,y:110},{x:W*.5,y:68},{x:W*.82,y:110}];
+  var cu=curM(), segs='';
+  for(var k=0;k<MI.length;k++){
+    var d=crSeg(P,k), done=S.ms[k].st==='done';
+    segs+='<path class="tr-base" d="'+d+'"/>';
+    if(done)segs+='<path class="tr-done'+(S.draw?'':' still')+'" pathLength="1" d="'+d+'" style="animation-delay:'+(.15+k*.15)+'s"/>';
+    else if(k===cu)segs+='<path class="tr-next" d="'+d+'"/>';
+  }
+  var deco='<path class="isl" d="'+blob(W*.36,170,26,3)+'"/><path class="isl" d="'+blob(W*.68,176,22,7)+'"/><path class="isl2" d="'+blob(W*.68,176,12,9)+'"/>'+
+    [[W*.3,40],[W*.66,30],[W*.9,190]].map(function(p){return '<path class="wave" d="M'+p[0].toFixed(0)+' '+p[1]+'q4 -4 8 0t8 0t8 0"/>'}).join('');
+  var stops=MI.map(function(m,i){var s=S.ms[i],p=P[i+1];
+    var st=s.st==='done'?'done':s.st==='lock'?'lock':'act';
+    var inner=i===2?chestSVG(30):st==='done'?dia(22,'gold'):i===cu?dia(22):'<span class="n">'+(i+1)+'</span>';
+    return '<button class="stop v '+st+(i===cu?' cur':'')+(i===S.just?' just':'')+(i===2&&st==='done'?' open':'')+'" type="button" style="left:'+p.x.toFixed(1)+'px;top:'+p.y+'px" onclick="openMission('+i+')" aria-label="Mission '+(i+1)+', '+m.name+'">'+
+      '<span class="mk gl">'+inner+(st==='lock'?'<span class="lk">'+svg('lock')+'</span>':'')+(i===cu?'<span class="here">You are here</span>':'')+'</span>'+
+      '<span class="lb"><i>Mission '+(i+1)+'</i><b>'+m.name+'</b><small>'+stopSub(i)+'</small></span></button>';}).join('');
+  return '<div class="tmap sm" style="height:'+H+'px">'+
+    '<svg class="mp" width="'+W+'" height="'+H+'" viewBox="0 0 '+W+' '+H+'" aria-hidden="true">'+deco+segs+
+      '<g transform="translate('+(P[0].x-6).toFixed(1)+' '+(P[0].y-20)+')" fill="none" stroke="#76634f" stroke-width="1.6" stroke-linecap="round"><path d="M6 26V2"/><path d="M6 3h14l-3 5 3 5H6" fill="#f1ca6d" stroke="#a8791f"/></g></svg>'+
+    stops+'</div>';
+}
+
+/* ---- body: journey ---- */
+function missionCard(){
+  var i=curM();
+  if(i<0){
+    var perks=S.ms[2].pick==='gift';
+    return '<div class="mc fin">'+dia(210,'deco')+trophy(44,'trophy')+'<div class="top"><em>All '+MI.length+' missions complete</em></div>'+
+      '<div class="r2"><h3>Journey complete!</h3></div><p class="g">Welcome to the inner circle of Vegas Club. Endless fortune awaits.</p>'+
+      (perks?'<button class="vd" type="button" onclick="openBundle(2)">'+dia(14,'gold')+'See your VIP perks</button>':'<button class="vd" type="button" onclick="setTab(\'rw\')">'+svg('wallet')+'Open My Rewards</button>')+'</div>';
+  }
+  var m=MI[i], s=S.ms[i];
+  if(s.st==='open'){var r=O[m.reward], c=m.perkMode==='one'&&m.perks.length===1?perkCost(m.perks[0],i):0;
+    return '<div class="mc">'+dia(210,'deco')+'<div class="top"><em>Mission '+(i+1)+' of '+MI.length+'</em></div>'+
+      '<div class="r2"><h3>'+m.name+'</h3></div><p class="g">'+m.line+'<br>Pick your reward.</p>'+
+      '<div class="ch2"><button class="cho" type="button" onclick="openGift('+i+')" aria-label="Perk: '+esc(perkTitle(i))+', see details">'+perkThumb(i)+'<span class="cx"><em>Perk'+(m.perkMode==='all'?'s':'')+(c?' · '+fmt(c)+' pts':'')+'</em><b>'+perkTitle(i)+'</b></span></button>'+
+        '<span class="or">or</span>'+
+        '<button class="cho" type="button" onclick="openChal('+i+')" aria-label="Challenge: $'+r.value+' Free Play, see details">'+thumb(r)+'<span class="cx"><em>Challenge</em><b>$'+r.value+' Free Play</b></span></button></div>'+
+      '<p class="sub">Tap an option to see details and choose.</p></div>';
+  }
+  var p=prog(i);
+  return '<div class="mc">'+dia(210,'deco')+'<div class="top"><em>Mission '+(i+1)+' of '+MI.length+' · challenge</em><span class="tag">Free Play</span></div>'+
+    '<div class="r2"><h3>'+m.name+'</h3><span class="val">$'+O[m.reward].value+'</span></div>'+
+    '<p class="g">'+ruleText(m.rule,true)+'</p>'+
+    '<div class="track"><span class="fill" style="width:'+Math.max(2,pct(p))+'%"></span></div>'+
+    '<div class="nums"><span><b>'+fmt(p.have)+'</b> / '+fmt(p.need)+' pts</span><span>'+pct(p)+'%</span></div>'+
+    '<p class="sub">'+windowTxt(i)+'</p>'+
+    '<button class="vd" type="button" onclick="openChal('+i+')">View details</button></div>';
+}
+function mapBody(){
+  return '<section class="fade"><p class="klbl">Current mission</p>'+missionCard()+'</section>'+
+    '<section><div class="lh"><h2>The journey</h2><span class="s">Tap a mission</span></div>'+mapHTML()+'</section>'+demoNote();
+}
+function demoNote(){return '<p class="note">Demo: Play adds 500 pts to the current gaming day; Next gaming day moves the clock to 6:00 AM tomorrow. <button type="button" onclick="openDemo()">'+svg('gear')+'Demo settings</button></p>'}
+
+/* ---- body: my rewards ---- */
+function wcardHTML(e){
+  var o=O[e.id], fp=o.kind==='fp', s=e.red?'rd':'ok', right, big, det, from='Mission '+(e.from+1)+' · '+MI[e.from].name, nm=o.name+(e.opt?' · '+e.opt:'');
+  if(s==='ok'){var ex=expiry(e);
+    right='<em>Valid until</em><b>'+ex.getDate()+' '+MS[ex.getMonth()]+'</b>';
+    big=fp?'<em>Free Play</em><b>$'+o.value+'</b>':o.amount?'<em>'+o.amountLabel+'</em><b>'+o.amount+'</b>':'<em>VIP perk</em><b class="sm">'+(e.opt||'Ready to claim')+'</b>';
+    det='<div class="wrow"><span>From</span><p><b>'+from+'</b></p></div>'+
+      (e.opt?'<div class="wrow"><span>Your item</span><p><b>'+e.opt+'</b></p></div>':'')+
+      '<div class="wrow"><span>Valid until</span><div><b>'+longDate(ex)+'</b><em>'+daysLeft(ex)+' days left · '+o.valid+'-day validity</em></div></div>'+
+      (o.rows||[]).map(function(x){return '<div class="wrow"><span>'+x[0]+'</span><p><b>'+x[1]+'</b></p></div>'}).join('')+
+      '<div class="wstaff">'+svg('staff')+'<div><b>Contact our staff to claim your reward</b><em>'+(fp?'Free Play is non‑cashable.':e.cost?'Staff deduct '+fmt(e.cost)+' redeemable points when you claim it.':'Opened by your Elite Coupon, no points needed.')+'</em></div></div>'+
+      '<div class="wbtns"><button type="button" onclick="event.stopPropagation();markRedeemed(\''+e.key+'\')">'+(fp?'Staff has given the Free Play':'Staff has redeemed it')+'</button></div>'+
+      '<p class="wnote">Tap the card again to close · Demo: staff confirm the claim.</p>';
+  } else {
+    var rd=new Date(e.red);
+    right='<em>Status</em><b>Claimed</b>';
+    big='<em>Claimed</em><b class="sm">'+longDate(rd)+'</b>';
+    det='<div class="wrow"><span>From</span><p><b>'+from+'</b></p></div><div class="wrow"><span>Claimed</span><div><b>'+longDate(rd)+'</b><em>Confirmed by our staff</em></div></div>'+
+      '<p class="wnote">Tap the card again to close.</p>';
+  }
+  return '<div class="wc '+s+(e.key===S.newG?' new':'')+(o.image?' hasimg':'')+'" data-id="'+e.key+'" style="'+themeVars(o)+'" onclick="toggleCard(\''+e.key+'\')" role="button" aria-label="'+esc(nm)+'">'+
+    (o.image?'':dia(230,'deco'))+
+    '<div class="wi"><div class="wtop"><span class="wic">'+svg(o.icon)+'</span><div class="wn"><b>'+o.name+'</b><em>'+typeOf(o)+(e.opt?' · '+e.opt:'')+'</em></div>'+
+      '<div class="wexp">'+right+'</div></div>'+
+    '<div class="wbig">'+svg(o.icon)+'<div>'+big+'</div></div><span class="wtap">'+(s==='ok'?'Tap to claim':'Tap to open')+'</span>'+
+    '<div class="wdet">'+det+'</div></div></div>';
+}
+function group(title,sub,list,key,empty){
+  var rd=list.filter(function(e){return !e.red}).length;
+  return '<section class="fade"><div class="lh"><h2>'+title+'</h2><span class="s">'+sub+(rd?' · <b class="rdy">'+rd+' ready</b>':'')+'</span></div>'+
+    (list.length?'<div class="wallet" data-g="'+key+'">'+list.map(wcardHTML).join('')+'</div>':'<div class="wempty gl">'+empty+'</div>')+'</section>';
+}
+function rwBody(){
+  var i=curM(), prompt='';
+  var left=MI[2].perks.filter(function(id){return !S.shopGot[id]}).length;
+  if(i>=0&&S.ms[i].st==='open')prompt='<button class="prm" type="button" onclick="openMission('+i+')">'+dia(22,'gold')+'<span><b>Mission '+(i+1)+' is open</b><em>'+perkTitle(i)+' or the $'+O[MI[i].reward].value+' challenge</em></span>'+chev()+'</button>';
+  else if(S.shopOpen&&left)prompt='<button class="prm" type="button" onclick="openBundle(2)">'+trophy(30)+'<span><b>Your VIP perks are open</b><em>'+left+' to redeem with your redeemable points</em></span>'+chev()+'</button>';
+  return (prompt?'<section class="fade">'+prompt+'</section>':'')+
+    group('Free Play','Won from challenges',ents('fp'),'fp','No Free Play yet. Accept a challenge on your journey to win some.')+
+    group('VIP perks','Perks',ents('perk'),'pk','No VIP perks yet. Take a perk on your journey to add one.')+demoNote();
+}
+var PEEK=62, CH0=196;
+function layoutWallet(anim){
+  [].slice.call(document.querySelectorAll('.wallet')).forEach(function(box){
+    var cards=[].slice.call(box.querySelectorAll('.wc')), n=cards.length;
+    if(!anim)box.classList.add('noanim');
+    var sel=null;cards.forEach(function(c){if(c.dataset.id===S.selG)sel=c});
+    if(!sel){
+      cards.forEach(function(c,i){c.classList.remove('open');c.style.height=CH0+'px';c.style.transform='translateY('+(i*PEEK)+'px)';c.style.zIndex=i+1});
+      box.style.height=((n-1)*PEEK+CH0)+'px';
+    } else {
+      sel.classList.add('open');
+      var h=sel.querySelector('.wi').scrollHeight+4, k=0, others=n-1;
+      sel.style.height=h+'px';sel.style.transform='translateY(0)';sel.style.zIndex=50;
+      cards.forEach(function(c){if(c===sel)return;c.classList.remove('open');c.style.height=CH0+'px';
+        c.style.transform='translateY('+(h+16+k*12)+'px) scale('+(1-(others-1-k)*.035)+')';c.style.zIndex=k+1;k++});
+      box.style.height=(h+(others?16+(others-1)*12+62:0))+'px';
+    }
+    if(!anim)requestAnimationFrame(function(){requestAnimationFrame(function(){box.classList.remove('noanim')})});
+  });
+}
+function toggleCard(key){
+  if(key&&S.selG===key)key=null;
+  S.selG=key;S.newG=null;layoutWallet(true);
+  if(key){var c=document.querySelector('.wc[data-id="'+key+'"]');if(c)setTimeout(function(){c.closest('section').scrollIntoView({behavior:'smooth',block:'start'})},80)}
+}
+/* in the member app, "Open in My Rewards" opens the app's Reward page on that card (no scrollIntoView here: it would scroll the app around this frame) */
+function toApp(key){closeSheet();try{parent.postMessage({vgEC:'open',key:key||null},'*')}catch(_){}}
+function openWallet(key){
+  if(EMB){toApp(key);return}
+  closeSheet();S.tab='rw';S.selG=null;S.newG=key;S.draw=true;render();window.scrollTo({top:0});
+  setTimeout(function(){S.newG=null;if(S.tab==='rw')toggleCard(key)},700);
+}
+function markRedeemed(key){var e=entOf(key);e.red=Date.now();if(e.cost)S.rp-=e.cost;S.selG=null;render();toast('Claimed · enjoy your '+(e.opt||short(O[e.id])))}
+
+/* ---- sheets ---- */
+function sheet(html,fn){var sh=document.getElementById('sh');sh.innerHTML='<div class="grab"></div>'+html;sh.scrollTop=0;lastSheet=fn||null;
+  document.getElementById('shov').classList.add('open');sh.classList.add('open')}
+function closeSheet(){lastSheet=null;document.getElementById('shov').classList.remove('open');document.getElementById('sh').classList.remove('open')}
+function openTC(){
+  sheet('<p class="sk" style="margin-top:4px">Elite Coupon</p><h3>Terms &amp; Conditions</h3><ul class="tc">'+TC.map(function(t){return '<li>'+t+'</li>'}).join('')+'</ul>'+
+    '<button class="pill dk" type="button" onclick="closeSheet()">Got it</button>');
+}
+
+function rows(o){return (o.rows||[]).map(function(x){return '<div class="dl"><span class="k">'+x[0]+'</span><p>'+x[1]+'</p></div>'}).join('')}
+function fineList(list){return list&&list.length?'<ul class="fine">'+list.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>':''}
+function costBox(c){var ok=avail()>=c;
+  return '<div class="cost gl"><div><span>Redeem with</span><b>'+fmt(c)+' redeemable pts</b></div>'+
+    '<div><span>Your redeemable points</span><b class="'+(ok?'ok':'no')+'">'+(ok?svg('check')+'Enough':rpPct(c)+'% of the way')+'</b></div>'+
+    (ok?'':'<div class="cb"><span class="track"><span class="fill" style="width:'+Math.max(3,rpPct(c))+'%"></span></span></div>')+'</div>'}
+function upl(path,o){return '<button class="upl" type="button" onclick="uploadFor(\''+path+'\')">'+svg('image')+(o.image?'Change banner image':'Upload banner image')+' · demo</button>'}
+function chalLink(i){return i!=null&&S.ms[i]&&S.ms[i].st!=='done'&&S.ms[i].st!=='lock'?'<button class="lnk" type="button" onclick="openChal('+i+')">Or take the $'+O[MI[i].reward].value+' Free Play challenge</button>':''}
+
+/* one perk. ctx: {m:i} perk option of mission i · {shop:1} Mission 3 perk · {} info only */
+function openOffer(id,ctx){
+  ctx=ctx||{};var o=O[id], i=ctx.m, c=ctx.shop?(o.cost||0):i!=null?perkCost(id,i):(o.cost||0), live=false, btn='', note='', kick=typeOf(o);
+  if(i!=null){var s=S.ms[i];kick='Mission '+(i+1)+' · Perk';
+    if(s.st==='lock')note='<p class="fine1">'+svg('lock')+'Opens when Mission '+i+' is complete.</p>';
+    else if(s.st==='done'){var e=s.key&&entOf(s.key);btn=s.pick==='gift'&&e&&e.id===id&&!e.red?'<button class="pill dk" type="button" onclick="openWallet(\''+e.key+'\')">'+svg('wallet')+'Open in My Rewards</button>':'';
+      note='<p class="fine1">'+svg('check')+(s.pick==='gift'?(e&&e.id===id?'You chose this perk.':'You chose another perk.'):'You took the challenge for this mission.')+'</p>';}
+    else live=true;
+  } else if(ctx.shop){kick='Mission 3 · VIP perk';
+    if(!S.shopOpen)note='<p class="fine1">'+svg('lock')+(S.ms[2].st==='done'?'You took the challenge for Mission 3.':'Opens when you choose VIP perks in Mission 3.')+'</p>';
+    else if(S.shopGot[id]){var e2=entOf(S.shopGot[id]);btn=!e2.red?'<button class="pill dk" type="button" onclick="openWallet(\''+e2.key+'\')">'+svg('wallet')+'Open in My Rewards</button>':'';note='<p class="fine1">'+svg('check')+'Redeemed · in My Rewards.</p>'}
+    else live=true;
+  }
+  if(live){
+    var ok=avail()>=c, label=c?'Redeem · '+fmt(c)+' pts':'Take '+o.name;
+    btn=!ok?'<button class="pill dk" type="button" disabled>Not enough redeemable points yet</button>'
+       :'<button class="pill dk" type="button" onclick="'+(i!=null?'takePerk('+i+',\''+id+'\')':'redeemShop(\''+id+'\')')+'">'+dia(16,'gold')+label+'</button>';
+    note='<p class="fine1">'+svg('info')+(c?'Staff deduct the redeemable points when you claim it. Free Play progress is not affected.':'Opened by your Elite Coupon. No points needed.')+'</p>';
+  }
+  sheet(banner(o)+upl(id,o)+
+    '<p class="sk">'+kick+'</p><h3>'+o.name+'</h3><p class="tg">'+o.line+'</p><p class="sd">'+(o.desc||'Free Play credit added to your player account by our staff. Non‑cashable.')+'</p>'+
+    rows(o)+(c&&(live||i==null)?costBox(c):'')+fineList(o.fine)+btn+note+(live&&i!=null?chalLink(i):''),
+    function(){openOffer(id,ctx)});
+}
+/* pick one of several perks (Mission 1: Gold Coffee or Finest Tea) */
+function openPick(i){
+  var m=MI[i], s=S.ms[i], live=s.st==='open'||s.st==='chal', sel=S.pick1&&m.perks.indexOf(S.pick1)>=0?O[S.pick1]:null, chosen=s.st==='done'&&s.pick==='gift'?entOf(s.key).id:null;
+  var list='<div class="plist">'+m.perks.map(function(id){var o=O[id], on=sel&&sel.id===id||chosen===id, c=perkCost(id,i);
+    return '<button class="pko'+(on?' on':'')+'" type="button" onclick="'+(live?'S.pick1=\''+id+'\';lastSheet()':'openOffer(\''+id+'\',{m:'+i+'})')+'" aria-pressed="'+!!on+'">'+banner(o,'sm')+
+      '<span class="pt"><b>'+o.name+'</b><em>'+o.line+'</em>'+(c?'<small>'+fmt(c)+' redeemable pts</small>':'')+'</span><span class="rad">'+(on?svg('check'):'')+'</span></button>'}).join('')+'</div>';
+  var det='', btn='', note='';
+  if(live&&sel){var c=perkCost(sel.id,i), ok=avail()>=c;
+    det='<div class="pdet">'+upl(sel.id,sel)+'<p class="sd">'+sel.desc+'</p>'+rows(sel)+(c?costBox(c):'')+'</div>';
+    btn=!ok?'<button class="pill dk" type="button" disabled>Not enough redeemable points yet</button>':'<button class="pill dk" type="button" onclick="takePerk('+i+',\''+sel.id+'\')">'+dia(16,'gold')+(c?'Redeem '+sel.name+' · '+fmt(c)+' pts':'Take '+sel.name)+'</button>';
+    note='<p class="fine1">'+svg('info')+(c?'Staff deduct the redeemable points when you claim it.':'Opened by your Elite Coupon. No points needed.')+'</p>';
+  } else if(live)btn='<button class="pill dk" type="button" disabled>Pick a perk</button>';
+  else if(s.st==='lock')note='<p class="fine1">'+svg('lock')+'Opens when Mission '+i+' is complete.</p>';
+  else note='<p class="fine1">'+svg('check')+(chosen?'You chose '+O[chosen].name+'.':'You took the challenge for this mission.')+'</p>';
+  sheet('<p class="sk" style="margin-top:4px">Mission '+(i+1)+' · Perk</p><h3>'+perkTitle(i)+'</h3><p class="tg">'+(m.free?'Pick one, on the house.':'Pick one.')+'</p>'+list+det+
+    fineList(['Perks cannot be exchanged for cash or Free Play.'])+btn+note+(live?chalLink(i):''),function(){openPick(i)});
+}
+/* every perk opens (Mission 3) */
+function openBundle(i){
+  var m=MI[i], s=S.ms[i], live=s.st==='open'||s.st==='chal';
+  var head=s.st==='done'&&s.pick==='gift'?'All '+m.perks.length+' perks are open. Redeem each with your redeemable points.'
+    :s.st==='done'?'You took the challenge for this mission.'
+    :'Choose VIP perks and all '+m.perks.length+' open at once. Each is then redeemed with your redeemable points.';
+  sheet(banner(BUNDLE)+'<p class="sk">Mission '+(i+1)+' · Perks</p><h3>'+perkTitle(i)+'</h3><p class="tg">Every perk, open together</p><p class="sd">'+head+'</p>'+shopRows()+
+    (live?'<button class="pill dk" type="button" onclick="takeBundle('+i+')">'+dia(16,'gold')+'Choose VIP perks</button><p class="fine1">'+svg('info')+'Choosing perks ends the challenge option for this mission.</p>'+chalLink(i)
+         :s.st==='lock'?'<p class="fine1">'+svg('lock')+'Opens when Mission '+i+' is complete.</p>':''),function(){openBundle(i)});
+}
+function openGift(i){var m=MI[i];if(m.perkMode==='all')openBundle(i);else if(m.perks.length>1)openPick(i);else openOffer(m.perks[0],{m:i})}
+function openChal(i){
+  var m=MI[i], r=O[m.reward], s=S.ms[i], body='', btn='', extra='';
+  if(s.st==='chal'){var p=prog(i);
+    body='<div class="cbox"><span class="otag">Challenge on</span><div class="track" style="margin-top:12px"><span class="fill" style="width:'+Math.max(2,pct(p))+'%"></span></div>'+
+      '<p class="hint" style="margin-top:6px"><b>'+fmt(p.have)+'</b> / '+fmt(p.need)+' pts · '+windowTxt(i)+'</p></div>';
+    btn='<button class="pill gl" type="button" onclick="openGift('+i+')">Changed your mind? See '+perkTitle(i)+'</button>';
+  } else if(s.st==='open'){
+    btn='<button class="pill dk" type="button" onclick="takeChal('+i+')">'+svg('bolt')+'Accept the challenge</button>';
+    extra='<button class="lnk" type="button" onclick="openGift('+i+')">Or take '+perkTitle(i)+'</button>';
+  } else if(s.st==='done'){
+    var e=s.key&&entOf(s.key);
+    body='<p class="fine1">'+svg('check')+(s.pick==='gift'?'You took the perk side of this mission.':'Challenge won.')+'</p>';
+    if(s.pick==='chal'&&e&&!e.red)btn='<button class="pill dk" type="button" onclick="openWallet(\''+e.key+'\')">'+svg('wallet')+'Open in My Rewards</button>';
+  } else body='<p class="fine1">'+svg('lock')+'Opens when Mission '+i+' is complete.</p>';
+  sheet(banner(r)+'<p class="sk">Mission '+(i+1)+' · Challenge</p><h3>$'+r.value+' Free Play</h3><p class="tg">'+ruleText(m.rule)+'</p>'+
+    '<p class="sd">'+ruleGoal(m.rule)+'</p>'+body+
+    fineList(['Free Play rewards are non‑cashable.','“1 visit” means one gaming day, 6:00 AM to 5:59 AM the next day.'])+btn+extra+
+    '<button class="lnk" type="button" onclick="openTC()">Terms &amp; Conditions</button>',function(){openChal(i)});
+}
+function orow(fn,o,kick,title,sub){return '<button class="orow" type="button" onclick="'+fn+'">'+thumb(o)+'<span class="cx2"><em>'+kick+'</em><b>'+title+'</b><small>'+sub+'</small></span>'+chev()+'</button>'}
+function openMission(i){
+  var m=MI[i], s=S.ms[i], r=O[m.reward], body, pt=m.perkMode==='all'?BUNDLE:O[m.perks[0]];
+  var c=m.perkMode==='one'&&m.perks.length===1?perkCost(m.perks[0],i):0;
+  if(s.st==='done'){
+    if(s.pick==='gift'&&m.perkMode==='all')body='<p class="sd">You chose VIP perks. All '+m.perks.length+' are open.</p>'+shopRows();
+    else{var e=entOf(s.key), got=O[e.id];
+      body='<p class="sd">'+(s.pick==='gift'?'You took the perk.':'You won the challenge.')+'</p>'+orow(s.pick==='gift'?'openGift('+i+')':'openChal('+i+')',got,s.pick==='gift'?'Your perk':'Challenge won',short(got),e.red?'Claimed':'Ready to claim with our staff');}
+  } else {
+    body='<p class="sd">'+(s.st==='lock'?'Opens when Mission '+i+' is complete. You will pick one:':'Pick one side.'+(i<MI.length-1?' Either way, Mission '+(i+2)+' opens next.':''))+'</p>'+
+      orow('openGift('+i+')',pt,(m.perkMode==='all'?'Perks · all open':'Perk')+(c?' · '+fmt(c)+' redeemable pts':m.free?' · free':''),perkTitle(i),m.perkMode==='all'?'Point Pyramid bonus · Maybach · Slot bonus':m.perks.map(function(id){return O[id].line}).join(' / '))+
+      '<div class="ordiv"><span>or</span></div>'+
+      orow('openChal('+i+')',r,'Challenge'+(s.st==='chal'?' · on':''),'$'+r.value+' Free Play',ruleText(m.rule));
+  }
+  sheet('<p class="sk" style="margin-top:4px">Mission '+(i+1)+' of '+MI.length+'</p><h3>'+m.name+'</h3><p class="tg">'+m.line+'</p>'+body+
+    '<button class="lnk" type="button" onclick="openTC()">Terms &amp; Conditions</button>',function(){openMission(i)});
+}
+function shopRows(){
+  return '<div class="plist">'+MI[2].perks.map(function(id){var o=O[id], got=S.shopGot[id], st;
+    if(!S.shopOpen)st=svg('lock')+'Opens with VIP perks';else if(got)st=svg('check')+'In My Rewards';else st=avail()>=o.cost?dia(9,'gold')+'Ready to redeem':rpPct(o.cost)+'% of the way';
+    return '<button class="pko" type="button" onclick="openOffer(\''+id+'\',{shop:1})">'+banner(o,'sm')+'<span class="pt"><b>'+o.name+'</b><em>'+fmt(o.cost)+' redeemable pts</em><small>'+st+'</small></span>'+chev()+'</button>'}).join('')+'</div>';
+}
+function redeemShop(id){var o=O[id];if(!S.shopOpen||S.shopGot[id]||avail()<o.cost)return;
+  var key=addEnt(id,2,o.cost,null);S.shopGot[id]=key;toast(o.name+' saved to My Rewards');openWallet(key)}
+
+/* ---- image upload (demo; kept in memory) ---- */
+var upId=null;
+function uploadFor(path){upId=path;var f=document.getElementById('upl');f.value='';f.click()}
+function target(path){var a=path.split(':'), o=O[a[0]];return a[1]?o.items.find(function(x){return x.id===a[1]}):o}
+function onUpload(input){
+  var file=input.files&&input.files[0];if(!file||!upId)return;
+  var rd=new FileReader();
+  rd.onload=function(){var img=new Image();img.onload=function(){
+      var w=Math.min(1200,img.width), h=Math.round(img.height*w/img.width), c=document.createElement('canvas');c.width=w;c.height=h;
+      c.getContext('2d').drawImage(img,0,0,w,h);var t=target(upId);t.image=c.toDataURL('image/jpeg',.85);
+      var fn=lastSheet;render();if(fn)fn();toast('Image updated · '+t.name)};
+    img.onerror=function(){toast('Could not read that image')};img.src=rd.result};
+  rd.readAsDataURL(file);
+}
+function clearImg(path){target(path).image='';var fn=lastSheet;render();if(fn)fn()}
+
+
+/* ---- demo panel ---- */
+var RT=[['gday','In 1 visit (1 gaming day)'],['visits','Across n visits'],['total','In total']];
+function imgRow(path,o,sub){
+  return '<div class="irow"><span class="ith" style="'+bgStyle(o)+'">'+(o.image?'':(o.kind==='fp'?'$':svg(o.icon)))+'</span><span class="in"><b>'+o.name+'</b><em>'+sub+'</em></span>'+
+    '<button type="button" class="ib" onclick="uploadFor(\''+path+'\')">'+(o.image?'Change':'Upload')+'</button>'+(o.image?'<button type="button" class="ib x" onclick="clearImg(\''+path+'\')" aria-label="Remove image">✕</button>':'<span></span>')+'</div>'}
+function openDemo(){
+  var cfg=MI.map(function(m,i){var u=m.rule;
+    return '<div class="cfg"><b>Mission '+(i+1)+' · '+m.name+' · challenge for $'+O[m.reward].value+'</b><div class="cfgr">'+
+      '<label>Rule<select id="cft'+i+'" onchange="document.getElementById(\'cfnw'+i+'\').hidden=this.value!==\'visits\'">'+RT.map(function(o){return '<option value="'+o[0]+'"'+(u.type===o[0]?' selected':'')+'>'+o[1]+'</option>'}).join('')+'</select></label>'+
+      '<label>Points<input id="cfp'+i+'" type="number" min="1" value="'+u.pts+'" inputmode="numeric"></label>'+
+      '<label id="cfnw'+i+'"'+(u.type==='visits'?'':' hidden')+'>Visits<input id="cfn'+i+'" type="number" min="2" max="10" value="'+(u.n||3)+'" inputmode="numeric"></label>'+
+    '</div></div>'}).join('');
+  var imgs=Object.keys(O).map(function(id){var o=O[id];
+    return imgRow(id,o,typeOf(o)+(o.cost&&o.kind!=='fp'?' · '+fmt(o.cost)+' pts':''))}).join('');
+  sheet('<p class="sk" style="margin-top:4px">Demo panel · not shown to players</p><h3>Points, challenges &amp; images</h3>'+
+    '<div class="dbal"><div><span>Gaming points</span><b>'+fmt(S.gp)+'</b><em>Challenges · Free Play</em></div>'+
+      '<div><span>Redeemable points</span><b>'+fmt(avail())+'</b><em>From API · perks</em></div></div>'+
+    '<button class="pill gl" type="button" onclick="S.rp+=1000;render();openDemo();toast(\'+1,000 redeemable pts (demo)\')">+1,000 redeemable pts</button>'+cfg+
+    '<button class="pill dk" type="button" onclick="applyDemo()">Apply rules &amp; restart demo</button>'+
+    '<p class="sk" style="margin-top:24px">Banner images</p><p class="sd" style="margin:4px 0 6px">Shown on banners, option tiles and My Rewards cards. Wide JPG or PNG works best.</p>'+imgs,openDemo);
+}
+function applyDemo(){
+  MI.forEach(function(m,i){
+    var t=document.getElementById('cft'+i).value, p=Math.max(1,parseInt(document.getElementById('cfp'+i).value,10)||m.rule.pts), n=Math.max(2,parseInt(document.getElementById('cfn'+i).value,10)||3);
+    m.rule=t==='visits'?{type:t,pts:p,n:n}:{type:t,pts:p};
+  });
+  var tab=S.tab;S=fresh();S.tab=tab;Q=[];closeSheet();render();toast('Rules updated · demo restarted');
+}
+
+/* ---- missions ---- */
+function addEnt(id,from,cost,opt){var key='e'+(++nk);S.ent.push({key:key,id:id,from:from,at:Date.now(),red:0,cost:cost||0,opt:opt||null});return key}
+function resetMp(){S.mp={pts:0,visits:0,last:0}}
+function openNext(i){if(i+1<MI.length)S.ms[i+1].st='open'}
+function takePerk(i,id){
+  var s=S.ms[i], c=perkCost(id,i);if(s.st!=='open'&&s.st!=='chal')return;if(c&&avail()<c)return;
+  var key=addEnt(id,i,c,null);
+  s.st='done';s.pick='gift';s.key=key;resetMp();S.pick1=null;openNext(i);
+  S.just=i;S.draw=true;closeSheet();render();
+  queue(function(){i===MI.length-1?celeFinal(key):celeMission(i,key)});
+}
+function takeBundle(i){
+  var s=S.ms[i];if(s.st!=='open'&&s.st!=='chal')return;
+  s.st='done';s.pick='gift';resetMp();S.shopOpen=true;openNext(i);
+  S.just=i;S.draw=true;closeSheet();render();queue(function(){celeFinal(null)});
+}
+function takeChal(i){
+  S.ms[i].st='chal';S.ms[i].pick='chal';resetMp();closeSheet();render();
+  toast('Challenge accepted · points count from now');
+}
+function winChal(i){
+  var m=MI[i], key=addEnt(m.reward,i,0);S.ms[i].st='done';S.ms[i].key=key;resetMp();S.just=i;S.draw=true;
+  openNext(i);queue(function(){i===MI.length-1?celeFinal(key):celeMission(i,key)});
+}
+
+/* ---- gaming day & points (demo) ---- */
+function ctaHTML(){
+  return '<p class="vst"><i></i><span>Gaming day '+S.gd+' · '+gdLabel(S.gd)+' · <b>'+fmt(S.dayPts)+'&nbsp;pts</b></span></p>'+
+    '<div class="ctab"><button class="cta" type="button" onclick="play()">'+dia(20,'gold')+'<span>Play · +500 pts</span><small>Demo</small></button>'+
+    '<button class="cto gl" type="button" onclick="nextDay()" aria-label="Next gaming day">Next day</button></div>';
+}
+function nextDay(){
+  var c=chalM(), msg;S.gd++;S.dayPts=0;
+  if(c>=0&&MI[c].rule.type==='gday'&&S.mp.pts>0){resetMp();msg='Gaming day '+S.gd+' · '+MI[c].name+' challenge restarts today'}
+  render();toast(msg||'Gaming day '+S.gd+' · 6:00 AM');
+}
+function play(){
+  var n=500, c=chalM(), won=false;
+  S.gp+=n;S.rp+=n;S.dayPts+=n;
+  if(c>=0){var u=MI[c].rule;
+    if(S.mp.last!==S.gd){            /* first points of a new visit (gaming day) since the challenge started */
+      if(u.type==='gday'){S.mp.pts=0;S.mp.visits=1}
+      else if(u.type==='visits'&&S.mp.visits>=u.n){S.mp={pts:0,visits:1,last:S.gd};toast(u.n+' visits used · '+MI[c].name+' restarts')}
+      else S.mp.visits++;
+      S.mp.last=S.gd;
+    }
+    S.mp.pts+=n;
+    if(S.mp.pts>=u.pts){won=true;winChal(c)}
+  }
+  render();
+  if(!won)toast('+'+n+' pts'+(c>=0?' · '+MI[c].name+' '+pct(prog(c))+'%':''));
+}
+
+/* ---- notifications ---- */
+var Q=[];
+function queue(f){Q.push(f);if(!document.getElementById('ov').classList.contains('open')&&!queue.busy)nextCele()}
+function nextCele(){var f=Q.shift();if(f)f()}
+function confetti(box,n){
+  var cols=['url(#gg)','#f8dd93','#dcae48','#9c8570','#c4b799'];
+  for(var i=0;i<n;i++){var h=10+Math.random()*12, d=document.createElement('span');d.className='conf';
+    d.style.cssText='left:'+(Math.random()*100)+'%;animation-delay:'+(Math.random()*.8)+'s;animation-duration:'+(2.2+Math.random()*1.4)+'s';
+    d.innerHTML=dia(h,'',i===0?'':'fill:'+cols[i%cols.length]);box.appendChild(d);}
+}
+function offerBox(o){return '<div class="offer">'+svg(o.icon)+'<div><span class="otag">'+(o.kind==='fp'?'Free Play':'VIP perk')+'</span><b>'+o.name+(o.kind==='fp'?' · $'+o.value:' · '+o.cat)+'</b></div></div>'}
+function celeMission(i,key){
+  var e=entOf(key), o=O[e.id], fp=o.kind==='fp', ov=document.getElementById('ov');
+  var lead=fp?'<span class="gn">+$'+o.value+'</span>':thumb(o,'big');
+  ov.innerHTML='<div class="cc" role="dialog" aria-label="Mission completed"><div class="top"'+(o.image?' style="background:url(\''+o.image+'\') center/cover"':'')+'><i class="orb o1"></i><i class="orb o2"></i><span class="gem">'+dia(104,'gold')+'</span></div>'+
+    '<div class="b2"><div class="row">'+lead+'<h3><small>Congratulations!</small>Mission completed!</h3></div>'+offerBox(o)+
+    '<p class="claimh"><b>Claim now!</b> Contact our staff to claim your reward.</p><p class="nx">Mission '+(i+2)+' is now open.</p>'+
+    '<button class="pill dk" type="button" onclick="claimNow(\''+key+'\')">'+dia(16,'gold')+'Claim now!</button>'+
+    '<button class="pill gl" type="button" onclick="closeCele()">Later</button></div></div>';
+  ov.classList.add('open');confetti(ov,22);
+}
+function celeFinal(key){
+  var e=key&&entOf(key), ov=document.getElementById('ov');
+  ov.innerHTML='<div class="cc" role="dialog" aria-label="Journey complete"><div class="top"><i class="orb o1"></i><i class="orb o2"></i><span class="gem">'+trophy(104)+'</span></div>'+
+    '<div class="b2"><h3 class="big"><small>Congratulations!</small>Journey complete!</h3>'+
+    '<p class="ctr">Welcome to the inner circle of Vegas Club.<br>Endless fortune awaits.</p>'+
+    (e?offerBox(O[e.id])+'<p class="claimh"><b>Claim now!</b> Contact our staff to claim your reward.</p>'+
+        '<button class="pill dk" type="button" onclick="claimNow(\''+key+'\')">'+dia(16,'gold')+'Claim now!</button><button class="pill gl" type="button" onclick="closeCele()">Later</button>'
+      :'<p class="nx ctr">All '+MI[2].perks.length+' VIP perks are now open. Redeem each with your redeemable points.</p>'+
+        '<button class="pill dk" type="button" onclick="closeCele(function(){openBundle(2)})">'+dia(16,'gold')+'See my VIP perks</button><button class="pill gl" type="button" onclick="closeCele()">Later</button>')+'</div></div>';
+  ov.classList.add('open');confetti(ov,44);
+}
+function claimNow(key){closeCele(function(){openWallet(key)})}
+function closeCele(after){
+  document.getElementById('ov').classList.remove('open');
+  queue.busy=true;
+  if(!after)render();
+  setTimeout(function(){
+    if(after)after();
+    var j=S.just;setTimeout(function(){if(S.just===j)S.just=-1},1400);
+    setTimeout(function(){queue.busy=false;nextCele()},after?1100:200);
+  },380);
+}
+function toast(m){var t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(function(){t.classList.remove('show')},2400)}
+
+/* ---- render ---- */
+function render(){
+  document.getElementById('ctaw').innerHTML=ctaHTML();
+  $hero.innerHTML=heroHTML();
+  $body.innerHTML=S.tab==='map'?mapBody():rwBody();
+  if(S.tab==='rw')layoutWallet(false);
+  S.draw=false;
+  pushEnt();
+}
+/* inside the member app: every reward won here also shows on the app's My Rewards › Reward page; the app can mark one claimed */
+var EMB=(function(){try{return window.parent!==window}catch(_){return false}})();
+function pushEnt(){if(!EMB)return;try{parent.postMessage({vgEC:'ent',list:S.ent.map(function(e){var o=O[e.id],fp=o.kind==='fp';
+  return {key:e.key,kind:fp?'fp':'perk',name:fp?'$'+o.value+' Free Play':o.name+(e.opt?' · '+e.opt:''),val:fp?'$'+o.value:o.amount?o.amount+' '+o.amountLabel.toLowerCase():o.line,
+    from:'Elite Coupon · Mission '+(e.from+1)+' '+(fp?'challenge':'perk'),at:e.at,valid:o.valid||14,red:e.red,cost:e.cost}})},'*')}catch(_){}}
+window.vgEC={redeem:function(k){var e=entOf(k);if(e&&!e.red)markRedeemed(k)}};
+function setTab(t){if(EMB&&t==='rw'){toApp(null);return}if(S.tab===t)return;S.tab=t;S.draw=true;S.selG=null;render();window.scrollTo({top:0})}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeSheet()});
+var rsz,lw=innerWidth;addEventListener('resize',function(){if(innerWidth===lw)return;lw=innerWidth;clearTimeout(rsz);rsz=setTimeout(render,150)});
+render();
+</script>
+
+</body>
+</html>
